@@ -1,0 +1,9 @@
+.user {
+  float:right;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+}
+
+.user a {
+	color: white;
+}

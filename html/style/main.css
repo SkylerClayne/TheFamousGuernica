@@ -206,3 +206,15 @@ footer {
   height: 75px;
   background-color: #CF1B0A;
 }
+
+.navigation [class^='part'] {
+  -webkit-transform: rotateX(90deg);
+  -webkit-transition: -webkit-transform 0.1s linear
+  transform: rotateX(90deg);
+  transform-origin: 0 0;
+}
+
+.navigation .attached [class^='part'] {
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}

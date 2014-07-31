@@ -38,7 +38,22 @@ nav {
   border: 1px solid #dedede;
   border-radius: 4px;
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
-  position: relative;
+  position: absolute;
+  height:40px;
+  display: block;
+  margin: 0px 0px 8px 0px;
+  overflow: hidden;
+  width: 100%; 
+}
+
+#navbar.navbar_fixed {
+  position:fixed;
+  top:0px;
+  color: #fff;
+  background-color: #CF1B0A;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
   height:40px;
   display: block;
   margin: 0px 0px 8px 0px;

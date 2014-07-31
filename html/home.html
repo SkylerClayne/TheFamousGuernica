@@ -5,8 +5,29 @@
 		<link rel="stylesheet" type="text/css" href="style/main.css">
 
 		<link rel="stylesheet" type="text/css" href="style/home.css">
+
+		<script type="text/javascript">
+
+function window_onload() {
+  window.addEventListener("scroll",navbar_reset_top,false);
+}
+
+var navbar_top=100;
+
+function navbar_reset_top() {
+  var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
+  if(scrollTop>navbar_top&&navbar.className==="navbar_absolute") {
+    document.getElementById("navbar").className="navbar_fixed";
+  }
+  else if(scrollTop<navbar_top&&navbar.className==="navbar_fixed") {
+    document.getElementById("navbar").className="navbar_absolute";
+  }
+}
+
+</script>
+
 	</head>
-	<body>
+	<body onload="javascript:window_onload();">
 		<header>
 			<!-- 
 			Place header items here. 
@@ -28,7 +49,7 @@
 		</header>
 
 						<!-- Place navigation items here. -->
-		<nav id="navigation">
+		<nav id="navbar" class="navbar_absolute">
 			<ul>
 				<li><a href="">Home</a></li>
 				<li><a href="">News</a>
@@ -50,15 +71,6 @@
 			</ul>
 
 		</nav>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
-		<script>
-		$(window).scroll(function() {
-			if ($(window).scrollTop() > ) {
-				$('.navigation').css('top', $(window).scrollTop());
-			}
-		});
-
-		</script>
 
 		<section>
 			<article class="full">

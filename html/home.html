@@ -1,7 +1,9 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Yorku University: Student Portal</title>
+		<title>YU: Student Portal</title>
+
+		<link rel="stylesheet" type="text/css" href="style/nav.css">
 		<link rel="stylesheet" type="text/css" href="style/main.css">
 		<link rel="stylesheet" type="text/css" href="style/home.css">
 		<script src="backbone/lockedBar.js"></script>
@@ -31,21 +33,27 @@
 						<!-- Place navigation items here. -->
 		<nav id="navbar" class="navbar_absolute">
 			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="">News</a>
-					<div>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="news.html">News</a>
+					<div id="submenu" class="submenu_absolute">
 						<ul>
-							<li><a href="">Department News</a></li>
+							<li><a href="deptnews.html">Department News</a></li>
 						</ul>
 					</div>
 				</li>
-				<li><a href="">Events</a></li>
-				<li><a href="">Transit</a></li>
-				<li><a href="">Calendar</a></li>
-				<li><a href="">Housing</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="transit.html">Transit</a></li>
+				<li><a href="calendar.html">Calendar</a></li>
+				<li><a href="housing.html">Housing</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="deptnews.html">Department News</a></li>
+						</ul>
+					</div>
+				</li>
 				<li>
 					<form id="search">
-						<input>
+						<input value="Search">
 					</form>
 				</li>			
 			</ul>
@@ -63,15 +71,17 @@
 			</article>
 
 			<article class="firsthalf">
-				<p>This is a 1/2 article.</p>
+				<a href="" id="subtitle">Upcoming Events and Announcements</a>
+				<p></p>
 			</article>
 
 			<article class="secondhalf">
-				<p>This is a 1/2 article.</p>
+				<a href="" id="subtitle">Popular Departure Buses</a>
+				<p></p>
 			</article>
 
-			<article id="newstitle">
-				<a href="">News and Announcements</a>
+			<article class="newstitle">
+				<a href="news.html" id="subtitle">News and Announcements</a>
 			</article>
 
 			<p>Every year, I go on a solo camping trip to the West Coast of Scotland. So ok, the longest I’ve actually spent away is four days, and I don’t technically pitch a tent, but sleep on the back seat of my mum’s car instead. After all, a few sheets of tarp aren’t exactly going to protect me from night monsters. So sure, by most standards my trips aren’t exactly a wilderness adventure. Yet I couldn’t care less.

@@ -9,29 +9,29 @@
 }
 
 .full {
-  margin: 5px auto 5px auto;
+  margin: 0px 10px 10px 10px;
   height:4em;
-  width:96%;
-  position: relative;
+  width:98%;
 }
 
-#newstitle{
+.newstitle{
   font-size: 20;
+  padding: 0.1em 0.5em 0.1em 0.5em;
   width:96%;
-  margin: 5px auto 5px 25px;
+  height: 1.5em;
+  margin: 575px 10px 5px 10px;
 }
 
 .firsthalf {
-  width: 47%;
+  width: 46%;
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  margin: 5px 0px 5px 10px;
   float:left;
-  position: relative;
-  margin: 5px auto 5px 25px;
 }
 
 .secondhalf {
-  width: 47%;
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  width: 46%;
   float: right;
-  position: relative;
-  margin: 5px 25px 5px auto;
+  margin: 5px 10px 5px 0px;
 }
-

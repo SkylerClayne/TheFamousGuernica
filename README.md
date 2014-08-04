@@ -4,6 +4,6 @@ TheFamousGuernica
 Working to finish homepages and news.
 
 --------------------------------------
-#TODO
+######TODO
 
 	Attempts in super charging the css.

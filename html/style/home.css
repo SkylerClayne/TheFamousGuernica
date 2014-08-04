@@ -14,14 +14,6 @@
   width:98%;
 }
 
-.newstitle{
-  font-size: 20;
-  padding: 0.1em 0.5em 0.1em 0.5em;
-  width:96%;
-  height: 1.5em;
-  margin: 575px 10px 5px 10px;
-}
-
 .firsthalf {
   width: 46%;
   padding: 0.1em 0.5em 0.1em 0.5em;
@@ -29,9 +21,89 @@
   float:left;
 }
 
+table.firsthalf, .firsthalf td {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.firsthalf td {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 1px;
+  border-bottom: 1px solid gray;
+}
+
 .secondhalf {
   padding: 0.1em 0.5em 0.1em 0.5em;
   width: 46%;
   float: right;
-  margin: 5px 10px 5px 0px;
+  margin: 5px 15px 5px 0px;
+}
+
+a#subheading {
+  position: relative;
+  top: 10px;
+  margin-left: 1em;
+  font-size: 18;
+  font-weight: 100;
+}
+
+hr {
+color: red;
+position: relative;
+top: 10px;
+width: 100%;
+margin-bottom: 0.9em;
+}
+
+
+.secondhalf table, .secondhalf td {
+  margin-top: 2em;
+  table-layout: fixed;
+  width: 100%;
+  margin-right: 100px;
+}
+
+
+td#tablehead {
+  font-size: 20;
+  font-weight: 900;
+}
+
+.newstitle{
+  font-size: 20;
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  width:1218px;
+  height: 1.5em;
+  margin: 19em 10px 5px 10px;
+}
+
+.article1 {
+  margin: 0px 10px 10px 10px;
+  height:8em;
+  width:1215px;
+  padding: 0.1em 0.5em 0.1em 0.8em;
+  position: relative;
+}
+
+.article1 img {
+  float: left;
+  margin-right: 25px;
+}
+
+ .article1 #textgroup {
+  font-weight: 200;
+  font-size: 18;
+  color: black;
+ }
+
+.article1 #textgroup h3  {
+  font-weight: 400;
+  color: #CF1B0A;
 }

@@ -74,17 +74,49 @@ a {
 
 a#subtitle {
   font-size: 20;
-  font-weight: 400;
+  font-weight: 500;
 }
-
 footer {
+  padding-top: 25px;
+  padding-right: 10px;
   bottom: 0;
   float:center;
   position: relative;
   width: 100%;
   height: 75px;
   background-color: #CF1B0A;
+  color: white;
+  font-size: 12;
+  font-weight: 100;
 
+}
+
+footer a {
+  color: white;
+}
+
+footer #copyright {
+  padding-right: 150px;
+}
+
+footer a#pandl, footer a#contact{
+  padding-right: 150px;
+  padding-bottom: 100px;
+}
+
+
+footer #social {
+  float:right;
+  padding-right: 100px;
+}
+
+footer #inline {
+  margin: 0px 0px 0px 100px;
+}
+
+#address {
+  padding-top: 30px;
+  padding-left: 500px;
 }
 
 #search{

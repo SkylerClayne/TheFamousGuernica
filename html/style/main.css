@@ -1,5 +1,5 @@
 html {
-  font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue";
+  font-family:"HelveticaNeue-Light", "Helvetica Neue Light";
 }
 
 body {
@@ -57,7 +57,7 @@ margin-top: 1em;
 
 #title {
   font-size: 40;
-  height: 10px;
+  height: 0.1em;
 }
 #breadcrumb {
   padding-left: 0.3em;
@@ -90,9 +90,10 @@ a#subheading {
 }
 
 footer {
+  padding: 1em 1em 1em 1em;
   bottom: 0px;
   width: 100%;
-  height: 75px;
+  height: 8em;
   position: inherit;
   background-color: #CF1B0A;
   color: white;
@@ -107,24 +108,92 @@ footer a {
 }
 
 footer #copyright {
-  padding-right: 150px;
+  padding-left: 0.8em;
+  padding-right: 8em;
 }
 
 footer a#pandl, footer a#contact{
-  padding-right: 150px;
+  padding-right: 10em;
  }
 
 
 footer #social {
   float:right;
-  padding-right: 100px;
+  padding-right: 12em;
 }
 
 #address {
-  padding-top: 30px;
-  padding-left: 500px;
+  padding-top: 5em;
+  padding-left: 30em;
 }
 
 #search{
-  margin-left: 450px;
+  margin-left: 10em;
+}
+
+h3 {
+  font-size: 20;
+  font-weight: 400;
+}
+
+#briefdescription{
+  font-size: 18;
+  font-family: 
+}
+
+#date {
+  font-size: 12;
+  color: gray;
+}
+
+/*
+  This content below is for a news post with a picture.
+*/
+.picturecontent {
+  margin: 0.1em 0em 0.5em 0.5em;
+  height:8em;
+  width: 54em;
+  padding: 0.1em 0.1em 0.1em 0.1em;
+  position: relative;
+  z-index: -1;
+}
+
+.picturecontent #title {
+  position: relative;
+  font-size: 20;
+}
+
+.picturecontent img {
+  padding-right: 0.5em;
+}
+
+.picturecontent #content {
+  font-size: 18;
+  color: black;
+}
+
+/*
+  This content below is for an announcement post without a picture.
+*/
+
+.fullcontent {
+  margin: 0.1em 0em 0.5em 0.5em;
+  height:8em;
+  width: 53em;
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  position: relative;
+}
+
+.fullcontent #title {
+  font-size: 20;
+}
+
+.fullcontent #date {
+  font-size: 12;
+  color: gray;
+}
+
+.fullcontent #content {
+  font-size: 18;
+  color: black;
 }

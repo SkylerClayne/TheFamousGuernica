@@ -9,9 +9,11 @@ Working to finish homepages and news.
 
 h1#title: title of current page.
 
-#breadcrumb: breadcrumb of current page.
+breadcrumb: breadcrumb of current page.
 
 a#subtitle: subtitle to link to a main page.
+
+numbdisplayed: The number of items currently being displayed under the related subtitle.
 
 --------------------------------------
 ######TODO

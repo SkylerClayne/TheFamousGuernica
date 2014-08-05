@@ -64,7 +64,6 @@ margin-bottom: 0.9em;
   margin-top: 2em;
   table-layout: fixed;
   width: 100%;
-  margin-right: 100px;
 }
 
 
@@ -81,10 +80,23 @@ td#tablehead {
   margin: 20.5em 0.5em 0.5em 0.5em;
 }
 
+.login {
+  float:right;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+}
+
+.login #loginbutton {
+  float:right;
+}
+
+/*
+
 .article1 {
-  margin: 0em 2em 2em 0.5em;
+  margin: 0em 2em 0.5em 0.5em;
   height:8em;
   width: 53em;
+  z-index: -1;
   padding: 0.3em 0.5em 0.1em 0.8em;
   position: relative;
 }
@@ -104,12 +116,4 @@ td#tablehead {
   font-weight: 400;
   color: #CF1B0A;
 }
-.login {
-  float:right;
-  margin-right: 0.5em;
-  margin-top: 0.5em;
-}
-
-.login #loginbutton {
-  float:right;
-}
+*/

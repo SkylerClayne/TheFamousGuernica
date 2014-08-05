@@ -15,6 +15,7 @@ a#subtitle: subtitle to link to a main page.
 
 numbdisplayed: The number of items currently being displayed under the related subtitle.
 
+.picturecontent: brief discription of a news article with a picture.
 --------------------------------------
 ######TODO
 

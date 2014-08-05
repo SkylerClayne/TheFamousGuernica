@@ -1,0 +1,94 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>YU: Student Portal</title>
+		<link rel="stylesheet" type="text/css" href="style/main.css">
+
+
+					<!-- INSERT STYLESHEET HERE -->
+
+
+		<link rel="stylesheet" type="text/css" href="style/nav.css">
+		<script src="backbone/lockedBar.js"></script>
+
+	</head>
+	<body onload="javascript:window_onload();">
+		<header>
+			<img id="logo" src="img/rsz_yorku_logo-trans.png">
+			<div class="login">
+				<form>
+					<input type="text" name="email" placeholder="email">
+					<input type="password" name="password" placeholder="password">
+					<br>
+					<input id="loginbutton" type="submit" value="Login">
+				</form>
+			</div>
+			<br>
+			<h1 id="sp">Student Portal</h1>
+			
+		</header>
+
+						<!-- Place navigation items here. -->
+		<nav id="navbar" class="navbar_absolute">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="news.html">News</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="deptnews.html">Department News</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="transit.html">Transit</a></li>
+				<li><a href="calendar.html">Calendar</a></li>
+				<li><a href="housing.html">Housing</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="deptnews.html">Department News</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<form id="search">
+						<input value="Search">
+					</form>
+				</li>			
+			</ul>
+
+		</nav>
+
+		<section>
+			<article class="full">
+				
+					<h1 id="title">Homepage</h1>
+					<span id="breadcrumb">
+					Home
+
+					<!-- FINISH YOUR BREADCRUMB HERE -->
+
+					</span>
+			</article>
+		</section>
+		<footer>
+			<center id="inline">
+				<span id="copyright">
+					Copyright © 2014 York University
+				</span>
+				<A HREF="" id="pandl">Privacy & Legal</A>
+				<a href="" id="contact">Contact Us</a>
+				Follow us:
+				<span id="social">
+					<a href=""><img src="img/facebook.png"></a>
+					<a href=""><img src="img/twitter.png"></a>
+					<a href=""><img src="img/linkedin.png"></a>
+					<a href=""><img src="img/youtube.png"></a>
+				</span>
+			</center>
+			<div id="address">
+				4700 Keele Street, Toronto, ON, M3J 1P3, Canada
+			</div>
+		</footer>
+	
+	</body>
+</html>

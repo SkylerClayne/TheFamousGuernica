@@ -1,10 +1,14 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Yorku University: Student Portal</title>
+		<title>YU: Student Portal</title>
+
 		<link rel="stylesheet" type="text/css" href="style/main.css">
-		<script src="backbone/lockedBar.js"></script>
 		<link rel="stylesheet" type="text/css" href="style/homereg.css">
+
+		<link rel="stylesheet" type="text/css" href="style/nav.css">
+		<script src="backbone/lockedBar.js"></script>
+
 	</head>
 	<body onload="javascript:window_onload();">
 		<header>
@@ -14,8 +18,8 @@
 
 			`-->
 			<img id="logo" src="img/rsz_yorku_logo-trans.png">
-			<div class="user">
-				Welcome back, <a href="">Tonny</a>
+			<div class="login">
+				Welcome back, <a href="">Tonny Lay</a>
 			</div>
 			<br>
 			<h1 id="sp">Student Portal</h1>
@@ -23,34 +27,40 @@
 		</header>
 
 						<!-- Place navigation items here. -->
-		<nav>
+		<nav id="navbar" class="navbar_absolute">
 			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="">News</a>
-					<div>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="news.html">News</a>
+					<div id="submenu" class="submenu_absolute">
 						<ul>
-							<li><a href="">Department News</a></li>
+							<li><a href="deptnews.html">Department News</a></li>
 						</ul>
 					</div>
 				</li>
-				<li><a href="">Events</a></li>
-				<li><a href="">Transit</a></li>
-				<li><a href="">Calendar</a></li>
-				<li><a href="">Housing</a></li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="transit.html">Transit</a></li>
+				<li><a href="calendar.html">Calendar</a></li>
+				<li><a href="housing.html">Housing</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="deptnews.html">Department News</a></li>
+						</ul>
+					</div>
+				</li>
 				<li>
 					<form id="search">
-						<input>
+						<input value="Search">
 					</form>
 				</li>			
 			</ul>
 
 		</nav>
 
-
 		<section>
 			<article class="full">
-				
-					<h1 id="title">Homepage</h1>
+				<!-- Grab the user's first name and post it in the span below. -->
+					<h1 id="title">
+						<span>Tonny</span>'s Dashboard</h1>
 					<span id="breadcrumb">
 					Home
 
@@ -58,17 +68,213 @@
 			</article>
 
 			<article class="firsthalf">
-				<p>This is a 1/2 article.</p>
+
+				<a href="" id="subtitle">Upcoming Events and Announcements</a>
+
+				<table class="firsthalf">
+					<tr>
+						<td rowspan="2">Wed Jul 9</td>
+						<td>All Month</td>
+						<td><a href="">Summer Courses</a></td>
+					</tr>
+					<tr>
+						<td>9:00am</td>
+						<td><a href="">Test 1</a></td>
+					</tr>
+					<tr>
+						<td rowspan="3">Fri Jul 11</td>
+						<td>All Day</td>
+						<td><a href="">Day Off</a></td>
+					</tr>
+					<tr>
+						<td>All Day</td>
+						<td><a href="">Greece Trip starts</a></td>
+					</tr>
+					<tr>
+						<td>22:00</td>
+						<td><a href="">Go out</a></td>
+					</tr>
+					<tr>
+						<td rowspan="2">Sun Jul 13</td>
+						<td>9:00 am</td>
+						<td><a href="">Greek students to show around the cityGreek students to show around the city</a></td>
+					</tr>
+					<tr>
+						<td>14:00</td>
+						<td><a href="">Finish up project</a></td>
+					</tr>
+					<tr>
+						<td>Mon Jul 14</td>
+						<td>9:30 am</td>
+						<td><a href="">Projects Due!</a></td>
+					</tr>
+
+
+				</table>
+				<hr>
 			</article>
 
 			<article class="secondhalf">
-				<p>This is a 1/2 article.</p>
+				<a href="" id="subtitle">Your upcoming Departure Buses</a>
+				<br>
+
+				<a href="" id="subheading">(No. 60) Steeles West: (York Lanes Stop)</a>
+
+				<table>
+					<tr>
+						<td rowspan="3" id="tablehead">16:00</td>
+						<td><img src="img/60C.png">
+							16:00
+						</td>
+						<td><img src="img/60C.png">
+							16:04
+						</td>
+						<td><img src="img/60C.png">
+							16:08
+						</td>
+						<td><img src="img/60C.png">
+							16:12
+						</td>
+						<td><img src="img/60C.png">
+							16:16
+						</td>
+						<td><img src="img/60C.png">
+							16:20
+						</td>
+					</tr>
+					<tr>
+						<td><img src="img/60C.png">
+							16:24
+						</td>
+						<td><img src="img/60C.png">
+							16:28
+						</td>
+						<td><img src="img/60C.png">
+							16:32
+						</td>
+						<td><img src="img/60C.png">
+							16:36
+						</td>
+						<td><img src="img/60C.png">
+							16:40
+						</td>
+						<td><img src="img/60C.png">
+							16:44
+						</td>
+					</tr>
+					<tr>
+						<td><img src="img/60C.png">
+							16:48
+						</td>
+						<td><img src="img/60C.png">
+							16:52
+						</td>
+						<td><img src="img/60C.png">
+							16:56
+						</td>
+					</tr>
+				</table>
+
+				<hr>
+				<a href="" id="subheading">(No. 196) York University Rocket: (York Lanes Stop)</a>
+
+<table>
+					<tr>
+						<td rowspan="3" id="tablehead">16:00</td>
+						<td><img src="img/196B.png">
+							16:00
+						</td>
+						<td><img src="img/196A.png">
+							16:04
+						</td>
+						<td><img src="img/196B.png">
+							16:08
+						</td>
+						<td><img src="img/196A.png">
+							16:12
+						</td>
+						<td><img src="img/196B.png">
+							16:16
+						</td>
+						<td><img src="img/196A.png">
+							16:20
+						</td>
+					</tr>
+					<tr>
+						<td><img src="img/196B.png">
+							16:24
+						</td>
+						<td><img src="img/196A.png">
+							16:28
+						</td>
+						<td><img src="img/196B.png">
+							16:32
+						</td>
+						<td><img src="img/196A.png">
+							16:36
+						</td>
+						<td><img src="img/196B.png">
+							16:40
+						</td>
+						<td><img src="img/196A.png">
+							16:44
+						</td>
+					</tr>
+					<tr>
+						<td><img src="img/196B.png">
+							16:48
+						</td>
+						<td><img src="img/196A.png">
+							16:52
+						</td>
+						<td><img src="img/196B.png">
+							16:56
+						</td>
+					</tr>
+				</table>
+
+				<hr>
+			</article>
+
+			<article class="newstitle">
+				<a href="news.html" id="subtitle">News and Announcements from your Department</a>
+			</article>
+			<article class="article1">
+				<img src="img/article1pic.png">
+				<div id="textgroup">
+					<h3><a href="">Students win academic prizes in Canadian studies</a></h3>
+					Fourth-year York history student Catherine Timms of the Faculty of Liberal Arts and Professional Studies won the Odessa Prize for her essay, while Monique Giroux won the Barbara Godard Prize for the Best Dissertation on the Study of Canada.
+				</div>
+			</article>
+
+			<article class="article1">
+				<img src="img/article1pic.png">
+				<div id="textgroup">
+					<h3><a href="">Students win academic prizes in Canadian studies</a></h3>
+					Fourth-year York history student Catherine Timms of the Faculty of Liberal Arts and Professional Studies won the Odessa Prize for her essay, while Monique Giroux won the Barbara Godard Prize for the Best Dissertation on the Study of Canada.
+				</div>
 			</article>
 
 		</section>
 
 		<footer>
-
+			<center id="inline">
+				<span id="copyright">
+					Copyright © 2014 York University
+				</span>
+				<A HREF="" id="pandl">Privacy & Legal</A>
+				<a href="" id="contact">Contact Us</a>
+				Follow us:
+				<span id="social">
+					<a href=""><img src="img/facebook.png"></a>
+					<a href=""><img src="img/twitter.png"></a>
+					<a href=""><img src="img/linkedin.png"></a>
+					<a href=""><img src="img/youtube.png"></a>
+				</span>
+			</center>
+			<div id="address">
+				4700 Keele Street, Toronto, ON, M3J 1P3, Canada
+			</div>
 		</footer>
 	</body>
 <html/>

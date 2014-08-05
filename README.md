@@ -17,6 +17,16 @@ numbdisplayed: The number of items currently being displayed under the related s
 
 .picturecontent: brief discription of a news article with a picture.
 --------------------------------------
+
+######Font:
+Title: 200%
+subtitles: 100%
+Content Title: 100%
+Date: 50%
+Content: 90%
+
+--------------------------------------
+
 ######TODO
 
 	Attempts in super charging the css.

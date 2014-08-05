@@ -12,7 +12,7 @@
   margin: 0.1em 0em 0.1em 0.5em;
   padding: 0em 0.5em 0em 0.5em;
   height:4em;
-  width: 53em;
+  width: 97%;
 }
 
 .firsthalf {
@@ -21,12 +21,11 @@
   padding: 0.1em 0.5em 0.1em 0.5em;
   margin: 0.5em 0.2em 0.1em 0.5em;
   float:left;
-  height:21em;
   z-index: -1;
 }
 
 table.firsthalf, .firsthalf td {
-  width: 98%;
+  width: 90%;
   border-collapse: collapse;
   table-layout: fixed;
   overflow: hidden;
@@ -35,11 +34,11 @@ table.firsthalf, .firsthalf td {
 }
 
 .firsthalf td {
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  height: 1px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 90%;
   border-bottom: 1px solid gray;
 }
 
@@ -47,14 +46,13 @@ table.firsthalf, .firsthalf td {
   padding: 0.1em 0.5em 0.1em 0.5em;
   width: 47%;
   float: right;
-  height:21em;
+  height:23.2em;
   margin: 0.5em 0.5em 0.1em 0em;
 }
 
 hr {
 color: red;
 position: relative;
-top: 10px;
 width: 100%;
 margin-bottom: 0.9em;
 }
@@ -63,21 +61,22 @@ margin-bottom: 0.9em;
 .secondhalf table, .secondhalf td {
   margin-top: 2em;
   table-layout: fixed;
-  width: 100%;
+  width: 98%;
+  font-size: 90%
 }
 
 
 td#tablehead {
-  font-size: 20;
+  font-size: 90%;
   font-weight: 900;
 }
 
 .newstitle{
-  font-size: 20;
+  font-size: 90%;
   padding: 0.1em 0.5em 0.1em 0.5em;
-  width: 47.8em;
+  width: 97%;
   height: 1.5em;
-  margin: 20.5em 0.5em 0.5em 0.5em;
+  margin: 25em 0.5em 0.5em 0.5em;
 }
 
 .login {

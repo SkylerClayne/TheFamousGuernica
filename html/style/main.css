@@ -15,7 +15,7 @@ body {
 
 header {
   color: #fff;
-  height:125px;
+  height:25%;
   position: relative;
   top:0px;
   background-color: #CF1B0A;
@@ -49,8 +49,8 @@ img, .logo {
 
 #sp {
 width:50%;
-font-size: 300%;
-margin:0 auto;
+font-size: 250%;
+margin:1.5em auto;
 text-align: center;
 }
 
@@ -127,7 +127,6 @@ footer #social {
 }
 
 #search{
-  margin-left: 10em;
 }
 
 h3 {
@@ -159,6 +158,8 @@ h3 {
 
 .picturecontent img {
   padding-right: 0.5em;
+  height: 90%;
+  width: 15%;
 }
 
 .picturecontent #content {

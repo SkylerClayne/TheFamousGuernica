@@ -1,0 +1,360 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>YU: Student Portal</title>
+		<link rel="stylesheet" type="text/css" href="style/main.css">
+
+		<link rel="stylesheet" type="text/css" href="style/news.css">
+
+					<!-- INSERT STYLESHEET HERE -->
+
+
+		<link rel="stylesheet" type="text/css" href="style/nav.css">
+		<script src="backbone/lockedBar.js"></script>
+
+	</head>
+	<body onload="javascript:window_onload();">
+		<header>
+			<img id="logo" src="img/rsz_yorku_logo-trans.png">
+			<div class="login">
+				Welcome back, <a href="">Tonny Lay</a>
+			</div>
+			<br>
+			<h1 id="sp">Student Portal</h1>
+			
+		</header>
+
+						<!-- Place navigation items here. -->
+		<nav id="navbar" class="navbar_absolute">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="news.html">News</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="deptnews.html">Department News</a></li>
+							<li><a href="deptann.html">Announcements</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="transit.html">Transit</a></li>
+				<li><a href="calendar.html">Calendar</a></li>
+				<li><a href="housing.html">Housing</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="deptnews.html">Department News</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<form id="search">
+						<input value="Search">
+					</form>
+				</li>			
+			</ul>
+
+		</nav>
+
+		<section>
+			<article class="full">
+				
+					<h1 id="title">Department</h1>
+					<span id="breadcrumb">
+					<a href="">Home</a> > <a href="">News</a> > Department News
+
+					<!-- FINISH YOUR BREADCRUMB HERE -->
+
+					</span>
+			</article>
+
+			<article class="full" id="filterresults">
+
+				<span id="col1of3">
+				<h1>Filter Search Results</h1> <!-- float left -->
+				</span>
+				<span id="col2of3">
+					<select>
+						<option selected="selected">By Date</option>
+						<option>Alphabetic by Department</option>	
+						<option>Alphabetic by Article</option>	
+					</select>
+				</span>
+				<span id="col3of3">
+					<select>
+						<option selected="selected">10 Results per Page</option>
+						<option>25 Results per page</option>
+						<option>50 Results per page</option>	
+					</select>
+				</span>
+			<span id="filtertitle">
+			</span>
+
+			</article>
+
+			<article class="full">
+
+				<div id="col1of3">
+
+					<input type="checkbox" value="ANTH">Anthropology
+					<br>
+					<input type="checkbox" value="BIO">Biology
+					<br>
+					<input type="checkbox" value="BUS">Business
+					<br>
+					<input type="checkbox" value="CHEM">Chemistry
+
+				</div>
+
+
+				<div id="col2of3">
+
+					<input type="checkbox" value="COMPSCI">Computer Science
+					<br>
+					<input type="checkbox" value="DM">Digital Media
+					<br>
+					<input type="checkbox" value="ENG">Engineering
+					<br>
+					<input type="checkbox" value="GS">General Science
+
+				</div>
+
+
+				<div id="col3of3">
+
+					<input type="checkbox" value="LING">Linguistics 
+					<br>
+					<input type="checkbox" value="PHY">Physics 
+					<br>
+					<input type="checkbox" value="PSY">Psychology
+					<br>
+					<input type="checkbox" value="SOC">Sociology
+
+				</div>
+
+			</article>
+			<article class="newstitle">
+				<a href="news.html" id="subtitle">Anthropology</a><span id="numbdisplayed">(Showing 1 of 5)</span>
+			</article>
+
+			<article class="picturecontent">
+				<img src="img/article1pic.png">
+
+				<div id="textcontent">
+					<span><a href="" id="title">Students win academic prizes in Canadian studies</a></span>
+					<br>
+					<span id="date">Jul 5, 2014</span>
+					<br>
+					<span id="content">
+					Fourth-year York history student Catherine Timms of the Faculty of Liberal Arts and Professional Studies won the Odessa Prize for her essay, while Monique Giroux won the Barbara Godard Prize for the Best Dissertation on the Study of Canada.
+					</span>
+				</div>
+			</article>
+			<article class="newstitle">
+				<a href="news.html" id="subtitle">Biology</a><span id="numbdisplayed">(Showing 1 of 5)</span>
+			</article>
+
+			<article class="picturecontent">
+				<img src="img/article1pic.png">
+
+				<div id="textcontent">
+					<span><a href="" id="title">Students win academic prizes in Canadian studies</a></span>
+					<br>
+					<span id="date">Jul 5, 2014</span>
+					<br>
+					<span id="content">
+					Fourth-year York history student Catherine Timms of the Faculty of Liberal Arts and Professional Studies won the Odessa Prize for her essay, while Monique Giroux won the Barbara Godard Prize for the Best Dissertation on the Study of Canada.
+					</span>
+				</div>
+			</article>
+			<article class="newstitle">
+				<a href="news.html" id="subtitle">Business</a><span id="numbdisplayed">(Showing 1 of 5)</span>
+			</article>
+
+			<article class="picturecontent">
+				<img src="img/article1pic.png">
+
+				<div id="textcontent">
+					<span><a href="" id="title">Students win academic prizes in Canadian studies</a></span>
+					<br>
+					<span id="date">Jul 5, 2014</span>
+					<br>
+					<span id="content">
+					Fourth-year York history student Catherine Timms of the Faculty of Liberal Arts and Professional Studies won the Odessa Prize for her essay, while Monique Giroux won the Barbara Godard Prize for the Best Dissertation on the Study of Canada.
+					</span>
+				</div>
+			</article>
+			<article class="newstitle">
+				<a href="news.html" id="subtitle">Chemistry</a><span id="numbdisplayed">(Showing 1 of 5)</span>
+			</article>
+
+			<article class="picturecontent">
+				<img src="img/article1pic.png">
+
+				<div id="textcontent">
+					<span><a href="" id="title">Students win academic prizes in Canadian studies</a></span>
+					<br>
+					<span id="date">Jul 5, 2014</span>
+					<br>
+					<span id="content">
+					Fourth-year York history student Catherine Timms of the Faculty of Liberal Arts and Professional Studies won the Odessa Prize for her essay, while Monique Giroux won the Barbara Godard Prize for the Best Dissertation on the Study of Canada.
+					</span>
+				</div>
+			</article>
+			<article class="newstitle">
+				<a href="news.html" id="subtitle">Computer Science</a><span id="numbdisplayed">(Showing 1 of 5)</span>
+			</article>
+
+			<article class="picturecontent">
+				<img src="img/article1pic.png">
+
+				<div id="textcontent">
+					<span><a href="" id="title">Students win academic prizes in Canadian studies</a></span>
+					<br>
+					<span id="date">Jul 5, 2014</span>
+					<br>
+					<span id="content">
+					Fourth-year York history student Catherine Timms of the Faculty of Liberal Arts and Professional Studies won the Odessa Prize for her essay, while Monique Giroux won the Barbara Godard Prize for the Best Dissertation on the Study of Canada.
+					</span>
+				</div>
+			</article><article class="newstitle">
+				<a href="news.html" id="subtitle">Digital Media</a><span id="numbdisplayed">(Showing 1 of 5)</span>
+			</article>
+
+			<article class="picturecontent">
+				<img src="img/article1pic.png">
+
+				<div id="textcontent">
+					<span><a href="" id="title">Students win academic prizes in Canadian studies</a></span>
+					<br>
+					<span id="date">Jul 5, 2014</span>
+					<br>
+					<span id="content">
+					Fourth-year York history student Catherine Timms of the Faculty of Liberal Arts and Professional Studies won the Odessa Prize for her essay, while Monique Giroux won the Barbara Godard Prize for the Best Dissertation on the Study of Canada.
+					</span>
+				</div>
+			</article>
+			<article class="newstitle">
+				<a href="news.html" id="subtitle">Engineering</a><span id="numbdisplayed">(Showing 1 of 5)</span>
+			</article>
+
+			<article class="picturecontent">
+				<img src="img/article1pic.png">
+
+				<div id="textcontent">
+					<span><a href="" id="title">Students win academic prizes in Canadian studies</a></span>
+					<br>
+					<span id="date">Jul 5, 2014</span>
+					<br>
+					<span id="content">
+					Fourth-year York history student Catherine Timms of the Faculty of Liberal Arts and Professional Studies won the Odessa Prize for her essay, while Monique Giroux won the Barbara Godard Prize for the Best Dissertation on the Study of Canada.
+					</span>
+				</div>
+			</article>
+			<article class="newstitle">
+				<a href="news.html" id="subtitle">General Sciences</a><span id="numbdisplayed">(Showing 1 of 5)</span>
+			</article>
+
+			<article class="picturecontent">
+				<img src="img/article1pic.png">
+
+				<div id="textcontent">
+					<span><a href="" id="title">Students win academic prizes in Canadian studies</a></span>
+					<br>
+					<span id="date">Jul 5, 2014</span>
+					<br>
+					<span id="content">
+					Fourth-year York history student Catherine Timms of the Faculty of Liberal Arts and Professional Studies won the Odessa Prize for her essay, while Monique Giroux won the Barbara Godard Prize for the Best Dissertation on the Study of Canada.
+					</span>
+				</div>
+			</article>
+			<article class="newstitle">
+				<a href="news.html" id="subtitle">Linguistics</a><span id="numbdisplayed">(Showing 1 of 5)</span>
+			</article>
+
+			<article class="picturecontent">
+				<img src="img/article1pic.png">
+
+				<div id="textcontent">
+					<span><a href="" id="title">Students win academic prizes in Canadian studies</a></span>
+					<br>
+					<span id="date">Jul 5, 2014</span>
+					<br>
+					<span id="content">
+					Fourth-year York history student Catherine Timms of the Faculty of Liberal Arts and Professional Studies won the Odessa Prize for her essay, while Monique Giroux won the Barbara Godard Prize for the Best Dissertation on the Study of Canada.
+					</span>
+				</div>
+			</article>
+			<article class="newstitle">
+				<a href="news.html" id="subtitle">Physics</a><span id="numbdisplayed">(Showing 1 of 5)</span>
+			</article>
+
+			<article class="picturecontent">
+				<img src="img/article1pic.png">
+
+				<div id="textcontent">
+					<span><a href="" id="title">Students win academic prizes in Canadian studies</a></span>
+					<br>
+					<span id="date">Jul 5, 2014</span>
+					<br>
+					<span id="content">
+					Fourth-year York history student Catherine Timms of the Faculty of Liberal Arts and Professional Studies won the Odessa Prize for her essay, while Monique Giroux won the Barbara Godard Prize for the Best Dissertation on the Study of Canada.
+					</span>
+				</div>
+			</article>
+			<article class="newstitle">
+				<a href="news.html" id="subtitle">Psychology</a><span id="numbdisplayed">(Showing 1 of 5)</span>
+			</article>
+
+			<article class="picturecontent">
+				<img src="img/article1pic.png">
+
+				<div id="textcontent">
+					<span><a href="" id="title">Students win academic prizes in Canadian studies</a></span>
+					<br>
+					<span id="date">Jul 5, 2014</span>
+					<br>
+					<span id="content">
+					Fourth-year York history student Catherine Timms of the Faculty of Liberal Arts and Professional Studies won the Odessa Prize for her essay, while Monique Giroux won the Barbara Godard Prize for the Best Dissertation on the Study of Canada.
+					</span>
+				</div>
+			</article>
+			<article class="newstitle">
+				<a href="news.html" id="subtitle">Sociology</a><span id="numbdisplayed">(Showing 1 of 5)</span>
+			</article>
+
+			<article class="picturecontent">
+				<img src="img/article1pic.png">
+
+				<div id="textcontent">
+					<span><a href="" id="title">Students win academic prizes in Canadian studies</a></span>
+					<br>
+					<span id="date">Jul 5, 2014</span>
+					<br>
+					<span id="content">
+					Fourth-year York history student Catherine Timms of the Faculty of Liberal Arts and Professional Studies won the Odessa Prize for her essay, while Monique Giroux won the Barbara Godard Prize for the Best Dissertation on the Study of Canada.
+					</span>
+				</div>
+			</article>
+		</section>
+		<footer>
+			<center id="inline">
+				<span id="copyright">
+					Copyright © 2014 York University
+				</span>
+				<A HREF="" id="pandl">Privacy & Legal</A>
+				<a href="" id="contact">Contact Us</a>
+				Follow us:
+				<span id="social">
+					<a href=""><img src="img/facebook.png"></a>
+					<a href=""><img src="img/twitter.png"></a>
+					<a href=""><img src="img/linkedin.png"></a>
+					<a href=""><img src="img/youtube.png"></a>
+				</span>
+			</center>
+			<div id="address">
+				4700 Keele Street, Toronto, ON, M3J 1P3, Canada
+			</div>
+		</footer>
+	
+	</body>
+</html>

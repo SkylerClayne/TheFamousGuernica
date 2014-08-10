@@ -1,10 +1,3 @@
-.full {
-  margin: 0.1em 0em 0.25em 0.5em;
-  padding: 0em 0.5em 0em 0.5em;
-  height:4em;
-  width: 53em;
-}
-
 .fullsubtitle {
   margin: 0.1em 0em 0.25em 0.5em;
   padding: 0em 0.5em 0em 0.5em;
@@ -18,11 +11,42 @@
   margin-top: 0.5em;
 }
 
+#filterresults {
+  height:10%;
+}
+
+select {
+  margin-top: 5%;
+}
+.newstitle{
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  width: 97%;
+  height: 5%;
+  margin: 0.5em 0.5em 0.5em 0.5em;
+}
+
 .user a {
 	color: white;
 }
+
 .login {
   float:right;
   margin-right: 0.5em;
   margin-top: 0.5em;
+}
+
+#col1of3 {
+  float:left;
+  width: 33%;
+  height:10%;
+}
+
+#col2of3 {
+  display:inline-block;
+  width: 33%;
+}
+
+#col3of3 {
+  float: right;
+  width: 33%;
 }

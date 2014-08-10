@@ -8,13 +8,6 @@
   float:right;
 }
 
-.full {
-  margin: 0.1em 0em 0.1em 0.5em;
-  padding: 0em 0.5em 0em 0.5em;
-  height:4em;
-  width: 97%;
-}
-
 .firsthalf {
   width: 47%;
   position: relative;
@@ -75,7 +68,7 @@ td#tablehead {
   font-size: 90%;
   padding: 0.1em 0.5em 0.1em 0.5em;
   width: 97%;
-  height: 1.5em;
+  height: 5%;
   margin: 25em 0.5em 0.5em 0.5em;
 }
 

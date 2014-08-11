@@ -1,0 +1,75 @@
+.fullsubtitle {
+  margin: 0.1em 0em 0.25em 0.5em;
+  padding: 0em 0.5em 0em 0.5em;
+  height:1.5em;
+  width: 53em;
+}
+
+.user {
+  float:right;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+}
+
+#filterresults {
+  height:10%;
+}
+
+select {
+  margin-top: 5%;
+}
+.newstitle{
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  width: 97%;
+  height: 5%;
+  margin: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.user a {
+	color: white;
+}
+
+.login {
+  float:right;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+}
+
+#filterbox {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#col1of3 {
+  float:left;
+  width: 33%;
+  height:10%;
+}
+
+#col2of3 {
+  display:inline-block;
+  width: 33%;
+}
+
+#col3of3 {
+  float: right;
+  width: 33%;
+}
+#filtertitle {
+  font-weight:800;
+   font-size:110%;
+}
+
+#numbresults, #searched {
+  font-weight: 100;
+}
+.newstitle {
+  padding-top: 1%;
+}
+
+.events {
+  height:15%;
+
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  width: 97%;
+  margin: 0.5em 0.5em 0.5em 0.5em;}

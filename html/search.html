@@ -1,0 +1,185 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>YU: Student Portal</title>
+		<link rel="stylesheet" type="text/css" href="style/main.css">
+
+		<link rel="stylesheet" type="text/css" href="style/search.css">
+
+					<!-- INSERT STYLESHEET HERE -->
+
+
+		<link rel="stylesheet" type="text/css" href="style/nav.css">
+		<script src="backbone/lockedBar.js"></script>
+
+	</head>
+	<body onload="javascript:window_onload();">
+		<header>
+			<img id="logo" src="img/rsz_yorku_logo-trans.png">
+			<div class="login">
+				Welcome back, <a href="">Tonny Lay</a>
+			</div>
+			<br>
+			<h1 id="sp">Student Portal</h1>
+			
+		</header>
+
+						<!-- Place navigation items here. -->
+		<nav id="navbar" class="navbar_absolute">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="news.html">News</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="deptnews.html">Department News</a></li>
+							<li><a href="deptann.html">Announcements</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="transit.html">Transit</a></li>
+				<li><a href="calendar.html">Calendar</a></li>
+				<li><a href="housing.html">Housing</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="deptnews.html">Department News</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<form id="search">
+						<input value="Search">
+					</form>
+				</li>			
+			</ul>
+
+		</nav>
+
+		<section>
+			<article class="full">
+				
+					<h1 id="title">Search Results</h1>
+					<span id="breadcrumb">
+					<a href="">Home</a> > Search
+
+					<!-- FINISH YOUR BREADCRUMB HERE -->
+
+					</span>
+			</article>
+
+			<article class="newstitle">
+				<span id="filtertitle">Filter <span id="numbresults">2</span> Results for <span id="searched">Canadian Studies</span></span>
+			</span>
+			</article>
+
+			<!-- Filter bar -->
+
+			<article class="full" id="filterresults">
+
+				<span id="col1of3">
+				<h1>Filter Search Results</h1> <!-- float left -->
+				</span>
+				<span id="col2of3">
+					<select>
+						<option selected="selected">By Date</option>
+						<option>Alphabetic by Department</option>	
+						<option>Alphabetic by Article</option>	
+					</select>
+				</span>
+				<span id="col3of3">
+					<select>
+						<option selected="selected">10 Results per Page</option>
+						<option>25 Results per page</option>
+						<option>50 Results per page</option>	
+					</select>
+				</span>
+			<span id="filtertitle">
+			</span>
+
+			</article>
+
+			<article class="full">
+
+				<div id="filterbox">
+				<div id="col1of3">
+
+					<input type="checkbox" value="ANTH">News
+					<br>
+					<input type="checkbox" value="BIO">Events
+
+				</div>
+
+
+				<div id="col2of3">
+
+					<input type="checkbox" value="COMPSCI">Transit
+					<br>
+					<input type="checkbox" value="DM">Calendar
+
+				</div>
+
+
+				<div id="col3of3">
+
+					<input type="checkbox" value="LING">Housing 
+					<br>
+					<input type="checkbox" value="PHY">Department
+
+				</div>
+			</div>
+
+<!-- News Bin -->
+
+			</article>
+			<article class="newstitle">
+				<a href="news.html" id="subtitle">News</a><span id="numbdisplayed">(Showing 1 of 5)</span>
+			</article>
+
+			<article class="picturecontent">
+				<img src="img/article1pic.png">
+
+				<div id="textcontent">
+					<span><a href="" id="title">Students win academic prizes in Canadian studies</a></span>
+					<br>
+					<span id="date">Jul 5, 2014</span>
+					<br>
+					<span id="content">
+					Fourth-year York history student Catherine Timms of the Faculty of Liberal Arts and Professional Studies won the Odessa Prize for her essay, while Monique Giroux won the Barbara Godard Prize for the Best Dissertation on the Study of Canada.
+					</span>
+				</div>
+			</article>
+
+<!-- Events Bin -->
+			<article class="newstitle">
+				<a href="news.html" id="subtitle">Events</a><span id="numbdisplayed">(Showing 1 of 1)</span>
+			</article>
+
+			<article class="events">
+				<h4>Cocktail party for Canadian Studies students:</h4>
+				<p>&nbsp Congratulatory cocktail party for the Canadian studies department, for winning academic prizes.</p>
+			</article>
+
+
+		</section>
+		<footer>
+			<center id="inline">
+				<span id="copyright">
+					Copyright © 2014 York University
+				</span>
+				<A HREF="" id="pandl">Privacy & Legal</A>
+				<a href="" id="contact">Contact Us</a>
+				Follow us:
+				<span id="social">
+					<a href=""><img src="img/facebook.png"></a>
+					<a href=""><img src="img/twitter.png"></a>
+					<a href=""><img src="img/linkedin.png"></a>
+					<a href=""><img src="img/youtube.png"></a>
+				</span>
+			</center>
+			<div id="address">
+				4700 Keele Street, Toronto, ON, M3J 1P3, Canada
+			</div>
+		</footer>
+	
+	</body>
+</html>

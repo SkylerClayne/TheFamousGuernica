@@ -1,0 +1,209 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>YU: Student Portal</title>
+		<link rel="stylesheet" type="text/css" href="style/main.css">
+
+		<link rel="stylesheet" type="text/css" href="style/house.css">
+
+					<!-- INSERT STYLESHEET HERE -->
+
+
+		<link rel="stylesheet" type="text/css" href="style/nav.css">
+		<script src="backbone/lockedBar.js"></script>
+
+	</head>
+	<body onload="javascript:window_onload();">
+		<header>
+			<img id="logo" src="img/rsz_yorku_logo-trans.png">
+			<div class="login">
+				Welcome back, <a href="">Tonny Lay</a>
+			</div>
+			<br>
+			<h1 id="sp">Student Portal</h1>
+			
+		</header>
+
+						<!-- Place navigation items here. -->
+		<nav id="navbar" class="navbar_absolute">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="news.html">News</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="deptnews.html">Department News</a></li>
+							<li><a href="deptann.html">Announcements</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="transit.html">Transit</a></li>
+				<li><a href="calendar.html">Calendar</a></li>
+				<li><a href="housing.html">Housing</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="deptnews.html">Department News</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<form id="search">
+						<input value="Search">
+					</form>
+				</li>			
+			</ul>
+
+		</nav>
+
+		<section>
+			<article class="full">
+				
+					<h1 id="title">On-Campus Housing</h1>
+					<span id="breadcrumb">
+					<a href="">Home</a> > <a href="housing.html">Housing</a> > On-Campus
+
+					<!-- FINISH YOUR BREADCRUMB HERE -->
+
+					</span>
+			</article>
+
+			<article class="full" id="filterresults">
+
+				<span id="col1of3">
+				<h1>Filter On-Campus Housing</h1> <!-- float left -->
+				</span>
+			<span id="filtertitle">
+			</span>
+
+			</article>
+
+			<article class="full">
+				<div id="filterbox">
+
+				<div id="col1of3">
+
+					<strong>Residence Buildings:</strong>
+					<br>
+					<input type="checkbox" value="BETH">Bethune Residence
+					<br>
+					<input type="checkbox" value="CAL">Calumet Residence
+					<br>
+					<input type="checkbox" value="POND">Pond Residence
+
+				</div>
+
+
+				<div id="col2of3">
+
+					<strong>Residence Style:</strong>
+					<br>
+					<input type="checkbox" value="SUIT">Suite Style
+					<br>
+					<input type="checkbox" value="DR">Double Rooms
+					<br>
+					<input type="checkbox" value="SR">Single Rooms
+
+				</div>
+
+
+				<div id="col3of3">
+
+					<strong>Nearby Locations</strong>
+					<br>
+					<input type="checkbox" value="EAT">Eating 
+					<br>
+					<input type="checkbox" value="PARK">Parking
+					<br>
+					<input type="checkbox" value="SHOP">Shopping
+
+				</div>
+				</div>
+
+			</article>
+			<article class="descriptionbox">
+
+				<img src="img/bethune.png">
+			<div id="description">
+				<a href="" id="subtitle">Bethune Residence</a>
+				<br>
+			<div id="info">
+				Price per room: <span id="price">$4500.00</span> 
+				<br> 
+				Availability: <span id="avail">Rooms Available</span>
+				<br>
+				Location: <span id="location"></span>
+				<!-- Pricing, location, and availability. -->
+			</div>
+				<br>
+				<p>
+					The Bethune Residence is the home for approximately 260 undergraduate students, the majority of them in first year. Our residence offers both tradistional style (floors 7-14) and suite style (floors 2-6) accomodation. In the traditional floors the rooms are both single and double occupancy with shared kitchenettes, bathrooms, and common rooms. The suite-style floors contain both 4 and 12-person suites, each with single and double bedrooms, a kitchen, bathroom, and one common room. Floor plans and a virtual tour are available.
+				</p>
+			</div>
+			</article>
+
+			<article class="descriptionbox">
+
+				<img src="img/bethune.png">
+			<div id="description">
+				<a href="" id="subtitle">Calumet Residence</a>
+				<br>
+			<div id="info">
+				Price per room: <span id="price">$4,870.00</span> 
+				<br> 
+				Availability: <span id="avail">Rooms Available</span>
+				<br>
+				Location: <span id="location"></span>
+				
+				<!-- Pricing, location, and availability. -->
+			</div>
+				<br>
+				<p>
+					The Bethune Residence is the home for approximately 260 undergraduate students, the majority of them in first year. Our residence offers both tradistional style (floors 7-14) and suite style (floors 2-6) accomodation. In the traditional floors the rooms are both single and double occupancy with shared kitchenettes, bathrooms, and common rooms. The suite-style floors contain both 4 and 12-person suites, each with single and double bedrooms, a kitchen, bathroom, and one common room. Floor plans and a virtual tour are available.
+				</p>
+			</div>
+			</article>
+
+			<article class="descriptionbox">
+
+				<img src="img/bethune.png">
+			<div id="description">
+				<a href="" id="subtitle">Pond Residence</a>
+				<br>
+			<div id="info">
+				Price per room: <span id="price">$5000.00</span> 
+				<br> 
+				Availability: <span id="avail" style="color:red">FULL</span>
+				<br>
+				Location: <span id="location"></span>
+				
+				<!-- Pricing, location, and availability. -->
+			</div>
+				<br>
+				<p>
+					The Bethune Residence is the home for approximately 260 undergraduate students, the majority of them in first year. Our residence offers both tradistional style (floors 7-14) and suite style (floors 2-6) accomodation. In the traditional floors the rooms are both single and double occupancy with shared kitchenettes, bathrooms, and common rooms. The suite-style floors contain both 4 and 12-person suites, each with single and double bedrooms, a kitchen, bathroom, and one common room. Floor plans and a virtual tour are available.
+				</p>
+			</div>
+			</article>
+		</section>
+		<footer>
+			<center id="inline">
+				<span id="copyright">
+					Copyright © 2014 York University
+				</span>
+				<A HREF="" id="pandl">Privacy & Legal</A>
+				<a href="" id="contact">Contact Us</a>
+				Follow us:
+				<span id="social">
+					<a href=""><img src="img/facebook.png"></a>
+					<a href=""><img src="img/twitter.png"></a>
+					<a href=""><img src="img/linkedin.png"></a>
+					<a href=""><img src="img/youtube.png"></a>
+				</span>
+			</center>
+			<div id="address">
+				4700 Keele Street, Toronto, ON, M3J 1P3, Canada
+			</div>
+		</footer>
+	
+	</body>
+</html>

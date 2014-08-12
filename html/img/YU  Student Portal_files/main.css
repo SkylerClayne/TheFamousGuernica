@@ -1,0 +1,206 @@
+html {
+  font-family:"Helvetica-Light", "Helvetica Light", "Helvetica";
+}
+
+body {
+  background-color: #EEEEEE;
+  font-weight: 300;
+  font-size: 90%;
+  overflow: scroll;
+  position: relative;
+  display: block;
+  top:0px;
+  color: black;
+}
+
+header {
+  color: #fff;
+  height:25%;
+  position: relative;
+  top:0px;
+  background-color: #CF1B0A;
+
+}
+
+.full {
+  margin: 0em 0em 0.5em 0.5em;
+  padding: 0em 0.5em 0.1em 0.5em;
+  position: inherit;
+  width: 97%;
+}
+
+.login {
+  padding-top: 0.8em;
+  padding-right: 1em;
+}
+.login a {
+  color: white;
+}
+
+section {
+  color: #CF1B0A;
+}
+article {
+  background-color: #fff;
+  display: block;
+  font-size: 90%;
+  font-weight: 100;
+}
+
+
+img, .logo {
+  float:left;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+
+#sp {
+width:50%;
+font-size: 250%;
+margin:1.5em auto;
+text-align: center;
+}
+
+#title {
+  font-size: 250%;
+  height: 0.1em;
+}
+#breadcrumb {
+  padding-left: 0.3em;
+  font-size: 90%;
+  padding-bottom: 1em;
+ 
+}
+a {
+  color:#CF1B0A;
+}
+
+a#subtitle {
+  font-size: 150%;
+  font-weight: 600;
+  height:5%;
+  position: relative;
+  float:left;
+}
+
+
+#numbdisplayed {
+  margin-left: 1%;
+  font-size: 90%;
+  margin-top: 0.5%;
+  position: absolute;
+  color: gray;
+}
+
+a#subheading {
+  position: relative;
+  top: 10px;
+  margin-left: 1em;
+  font-size: 110%;
+  font-weight: 100;
+}
+
+footer {
+  padding: 1em 1em 1em 1em;
+  bottom: 0px;
+  height: 8em;
+  position: inherit;
+  background-color: #CF1B0A;
+  color: white;
+  font-size: 12;
+  font-weight: 100;
+  z-index: 100;
+
+}
+
+footer a {
+  color: white;
+}
+
+footer #copyright {
+  padding-left: 0.8em;
+  padding-right: 8em;
+}
+
+footer a#pandl, footer a#contact{
+  padding-right: 10em;
+ }
+
+
+footer #social {
+  float:right;
+  padding-right: 12em;
+}
+
+#address {
+  padding-top: 5em;
+  padding-left: 30em;
+}
+
+h3 {
+  font-size: 20;
+  font-weight: 400;
+}
+
+#date {
+  font-size: 75%;
+  color: gray;
+}
+
+/*
+  This content below is for a news post with a picture.
+*/
+
+div#textcontent {
+  margin-top: 1%;
+}
+.picturecontent {
+  margin: 0.1em 0em 0.5em 0.5em;
+  height:8em;
+  width: 98%;
+  padding: 0.1em 0.1em 0.1em 0.1em;
+  position: relative;
+  z-index: -1;
+}
+
+.picturecontent #title {
+  position: relative;
+  font-size: 110%;
+}
+
+.picturecontent img {
+  padding-right: 0.5em;
+  height: 90%;
+  width: 15%;
+}
+
+.picturecontent #content {
+  font-size: 90%;
+  color: black;
+}
+
+/*
+  This content below is for an announcement post without a picture.
+*/
+
+.fullcontent {
+  margin: 0.1em 0em 0.5em 0.5em;
+  height:8em;
+  width: 97%;
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  position: relative;
+}
+
+.fullcontent #title {
+  font-size: 100%;
+}
+
+.fullcontent #date {
+  font-size: 50%;
+  color: gray;
+}
+
+.fullcontent #content {
+  font-size: 75%;
+  color: black;
+}

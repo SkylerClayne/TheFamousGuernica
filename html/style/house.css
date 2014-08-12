@@ -102,3 +102,10 @@ p{
 #info #avail {
   color: green;
 }
+.events {
+  height:11%;
+  padding-left: 5%;
+  padding-top: 0.1em;
+  width: 97%;
+  margin: 0.5em 0.5em 0.5em 0.5em;
+}

@@ -1,0 +1,26 @@
+img {
+	width:20%;
+	float: right;
+	padding:0;
+}
+
+#thelargest {
+	width: 100%;
+}
+
+#search {
+border:0;
+float: left;
+height:100%;
+width: 80%;
+}
+#searchbar {
+	height: 5%;
+	border: 1px solid gray;
+	width: 18%;
+	position: absolute;
+}
+
+input #searchbar:focus {
+	background-color:red;
+}

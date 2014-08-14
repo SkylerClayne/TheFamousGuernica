@@ -1,0 +1,26 @@
+img#magnify {
+	width:20%;
+	float: right;
+	margin-top: -5;
+	position: absolute;
+}
+
+#thelargest {
+	width: 100%;
+}
+
+#search {
+	border:0;
+	float: left;
+	height:15px;
+	width: 80%;
+}
+
+#searchbar {
+	background-color: white;
+	height: 15px;
+	border: 1px solid gray;
+	width: 18%;
+	position: absolute;
+	z-index: 100;
+}

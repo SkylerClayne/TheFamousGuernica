@@ -3,14 +3,15 @@
 		<meta charset="UTF-8">
 		<title>YU: Student Portal</title>
 		<link rel="stylesheet" type="text/css" href="style/main.css">
-
 		<link rel="stylesheet" type="text/css" href="style/house.css">
 
 					<!-- INSERT STYLESHEET HERE -->
 
 
 		<link rel="stylesheet" type="text/css" href="style/nav.css">
+		<link rel="stylesheet" type="text/css" href="style/search-bar.css">
 		<script src="backbone/lockedBar.js"></script>
+		<script src="backbone/searchalg.js"></script>
 
 	</head>
 	<body onload="javascript:window_onload();">
@@ -24,7 +25,7 @@
 			
 		</header>
 
-						<!-- Place navigation items here. -->
+						<!-- Here navigation -->
 		<nav id="navbar" class="navbar_absolute">
 			<ul>
 				<li><a href="home.html">Home</a></li>
@@ -42,36 +43,26 @@
 				<li><a href="housing.html">Housing</a>
 					<div id="submenu" class="submenu_absolute">
 						<ul>
-							<li><a href="deptnews.html">Department News</a></li>
+							<li><a href="oncampus.html">On-Campus</a></li>
+							<li><a href="offcampus.html">Off-Campus</a></li>
 						</ul>
 					</div>
 				</li>
 				<li>
-					<form id="search">
-						<input type="text" id="search" >
-						<input type="button" id="searchbtn" value="Search" onclick="openSearchPage()">
+					<form NAME="searchfield" ACTION="" METHOD="GET">
+						<div id="searchbar">
 
-						<script type="text/javascript">
-							function searchKeyPress(e){
-								if(typeof e == 'undefined' && window.event) {
-									e = window.event;
-								}
-								if (e.keyCode == 13) {
-									document.getElementById('searchbtn').click();
-								}
-							}
-
-							function openSearchPage(){
-								window.open('search.html');
-							}
-
-						</script>
+							<input type="text" id="search" name="search" width="10" onkeypress="searchKeyPress(event)"
+							>
+							<a href="" onclick="openSearchPage()"><img src="img/search-black.png" id="magnify"></a>
+						</div>
 					</form>
 				</li>			
 			</ul>
-
 		</nav>
 
+		<!-- end of navigation -->
+		
 		<section>
 			<article class="full">
 				

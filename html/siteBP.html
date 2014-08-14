@@ -9,7 +9,9 @@
 
 
 		<link rel="stylesheet" type="text/css" href="style/nav.css">
+		<link rel="stylesheet" type="text/css" href="style/search-bar.css">
 		<script src="backbone/lockedBar.js"></script>
+		<script src="backbone/searchalg.js"></script>
 
 	</head>
 	<body onload="javascript:window_onload();">
@@ -28,7 +30,7 @@
 			
 		</header>
 
-						<!-- Place navigation items here. -->
+						<!-- Here navigation -->
 		<nav id="navbar" class="navbar_absolute">
 			<ul>
 				<li><a href="home.html">Home</a></li>
@@ -36,6 +38,7 @@
 					<div id="submenu" class="submenu_absolute">
 						<ul>
 							<li><a href="deptnews.html">Department News</a></li>
+							<li><a href="deptann.html">Announcements</a></li>
 						</ul>
 					</div>
 				</li>
@@ -45,18 +48,25 @@
 				<li><a href="housing.html">Housing</a>
 					<div id="submenu" class="submenu_absolute">
 						<ul>
-							<li><a href="deptnews.html">Department News</a></li>
+							<li><a href="oncampus.html">On-Campus</a></li>
+							<li><a href="offcampus.html">Off-Campus</a></li>
 						</ul>
 					</div>
 				</li>
 				<li>
-					<form id="search">
-						<input value="Search">
+					<form NAME="searchfield" ACTION="" METHOD="GET">
+						<div id="searchbar">
+
+							<input type="text" id="search" name="search" width="10" onkeypress="searchKeyPress(event)"
+							>
+							<a href="" onclick="openSearchPage()"><img src="img/search-black.png" id="magnify"></a>
+						</div>
 					</form>
 				</li>			
 			</ul>
-
 		</nav>
+
+		<!-- end of navigation -->
 
 		<section>
 			<article class="full">

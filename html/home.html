@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="style/main.css">
 		<link rel="stylesheet" type="text/css" href="style/home.css">
 		<link rel="stylesheet" type="text/css" href="style/nav.css">
+		<link rel="stylesheet" type="text/css" href="style/search-bar.css">
 		<script src="backbone/lockedBar.js"></script>
 		<script src="backbone/searchalg.js"></script>
 
@@ -32,7 +33,7 @@
 			
 		</header>
 
-						<!-- Place navigation items here. -->
+						<!-- Here navigation -->
 		<nav id="navbar" class="navbar_absolute">
 			<ul>
 				<li><a href="home.html">Home</a></li>
@@ -57,13 +58,18 @@
 				</li>
 				<li>
 					<form NAME="searchfield" ACTION="" METHOD="GET">
-						<input type="text" NAME="search" id="search" onkeypress="searchKeyPress(event)">
-						<input type="button" id="searchbtn" value="Search" onclick="openSearchPage()">
+						<div id="searchbar">
+
+							<input type="text" id="search" name="search" width="10" onkeypress="searchKeyPress(event)"
+							>
+							<a href="" onclick="openSearchPage()"><img src="img/search-black.png" id="magnify"></a>
+						</div>
 					</form>
 				</li>			
 			</ul>
-
 		</nav>
+
+		<!-- end of navigation -->
 
 		<section>
 			<article class="full">

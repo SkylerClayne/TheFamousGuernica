@@ -1,13 +1,13 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<title>YU: Student Portal</title>
 
 		<link rel="stylesheet" type="text/css" href="style/main.css">
 		<link rel="stylesheet" type="text/css" href="style/home.css">
-
 		<link rel="stylesheet" type="text/css" href="style/nav.css">
-		<link rel="stylesheet" type="text/css" href="search-bar.css">
+		<link rel="stylesheet" type="text/css" href="style/search-bar.css">
 		<script src="backbone/lockedBar.js"></script>
 		<script src="backbone/searchalg.js"></script>
 
@@ -20,12 +20,12 @@
 
 			`-->
 			<img id="logo" src="img/rsz_yorku_logo-trans.png">
-			<div class="login">
+<div class="login">
 				Welcome back, <a href="">Tonny Lay</a>
 			</div>
 			<br>
 			<h1 id="sp">Student Portal</h1>
-			
+			</div>
 		</header>
 
 						<!-- Here navigation -->
@@ -55,7 +55,7 @@
 					<form NAME="searchfield" ACTION="" METHOD="GET">
 						<div id="searchbar">
 
-							<input type="text" id="search" name="search" width="10" onkeypress="searchKeyPress(event)"
+							<input type="text" id="search" name="search" width="10" placeholder="Search" onkeypress="searchKeyPress(event)"
 							>
 							<a href="" onclick="openSearchPage()"><img src="img/search-black.png" id="magnify"></a>
 						</div>
@@ -69,10 +69,7 @@
 		<section>
 			<article class="full">
 				
-							<!-- Grab the user's first name and post it in the span below. -->
-					<h1 id="title">
-						<span>Tonny</span>'s Dashboard</h1>
-
+						<h1 id="title"><span>Tonny</span>'s Dashboard</h1>
 					<span id="breadcrumb">
 					Home
 
@@ -127,7 +124,7 @@
 			</article>
 
 			<article class="secondhalf">
-				<a href="" id="subtitle">Your upcoming Departure Buses</a>
+				<a href="" id="subtitle">Your Departure Buses</a>
 				<br>
 
 				<a href="" id="subheading">(No. 60) Steeles West: (York Lanes Stop)</a>
@@ -248,37 +245,21 @@
 				<hr>
 			</article>
 
-			<article class="newstitle">
-								<a href="news.html" id="subtitle">News and Announcements from your Department</a><span id="numbdisplayed">(Showing 1 of 5)</span>
+			<article class="newstitle">News and Announcements from your Department</a><span id="numbdisplayed">(Showing 1 of 5)</span>
 			</article>
 
 
 			<article class="picturecontent">
 				<img src="img/article1pic.png">
-
 				<div id="textcontent">
-					<span><a href="" id="title">Students win academic prizes in Canadian studies</a></span>
+					<span id="articletitle"><a href="" id="title">Students win academic prizes in Canadian studies</a></span>
 					<br>
 					<span id="date">Jul 5, 2014</span>
 					<br>
 					<span id="content">
 					Fourth-year York history student Catherine Timms of the Faculty of Liberal Arts and Professional Studies won the Odessa Prize for her essay, while Monique Giroux won the Barbara Godard Prize for the Best Dissertation on the Study of Canada.
 					</span>
-				</div>
-			</article>
-
-			<article class="picturecontent">
-				<img src="img/article1pic.png">
-
-				<div id="textcontent">
-					<span><a href="" id="title">Students win academic prizes in Canadian studies</a></span>
-					<br>
-					<span id="date">Jul 5, 2014</span>
-					<br>
-					<span id="content">
-					Fourth-year York history student Catherine Timms of the Faculty of Liberal Arts and Professional Studies won the Odessa Prize for her essay, while Monique Giroux won the Barbara Godard Prize for the Best Dissertation on the Study of Canada.
-					</span>
-				</div>
+					</div>
 			</article>
 
 		</section>

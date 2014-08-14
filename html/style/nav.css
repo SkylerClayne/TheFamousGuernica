@@ -15,16 +15,17 @@ nav {
   margin: 0px 0px 10px 0px;
   overflow: hidden;
   width: 100%; 
+  position: relative;
 }
   nav ul {
     margin: 0;
     padding: 0;
+    position: relative;
   }
 
     nav ul li {
       display: inline-block;
       list-style-type: none;
-      
       -webkit-transition: all 0.2s;
         transition: all 0.2s; 
     }

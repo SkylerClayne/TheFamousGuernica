@@ -3,7 +3,7 @@ TheFamousGuernica
 
 This project is for a Human-Computer Interaction course offered by York, at the University of Crete.
 
-This project was developed in the Google Chrome web browser, in 1024x768 resolution..
+This project was developed in the Google Chrome web browser, in 1024x768 resolution.
 
 --------------------------------------
 

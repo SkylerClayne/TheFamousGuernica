@@ -1,7 +1,9 @@
 TheFamousGuernica
 =================
 
-Working to finish homepages and news.
+This project is for a Human-Computer Interaction course offered by York, at the University of Crete.
+
+This project was developed in the Google Chrome web browser, in 1024x768 resolution.
 
 --------------------------------------
 
@@ -15,7 +17,7 @@ a#subtitle: subtitle to link to a main page.
 
 numbdisplayed: The number of items currently being displayed under the related subtitle.
 
-.picturecontent: brief discription of a news article with a picture.
+/.picturecontent: brief discription of a news article with a picture.
 --------------------------------------
 
 ######Font:
@@ -27,10 +29,4 @@ Content: 90%
 
 --------------------------------------
 
-######TODO
 
-	Attempts in super charging the css.
-
-[follow me](www.twitter.com/skylerclayne)  
-[tumblr](http://skylerclayne.tumblr.com/)  
-[facebook](www.facebook.com/skylerclayne2)  

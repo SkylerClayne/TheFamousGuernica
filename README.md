@@ -7,7 +7,7 @@ This project was developed in the Google Chrome web browser, in 1024x768 resolut
 
 --------------------------------------
 
-######Distriburtion of work:
+######Distribution of work:
 Home: Both Registered(home.html) and Unregistered(homereg.html)  - Skyler  
 News: All News and Announcements - Skyler  
 Events: All Events - Dyala  

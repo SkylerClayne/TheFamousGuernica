@@ -1,0 +1,248 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Transit Schedules - YU: Student Portal</title>
+
+		<link rel="stylesheet" type="text/css" href="style/main.css">
+		<link rel="stylesheet" type="text/css" href="style/tonny.css">
+		<link rel="stylesheet" type="text/css" href="style/route.css">
+		<link rel="stylesheet" type="text/css" href="style/nav.css">
+		<script src="backbone/lockedBar.js"></script>
+		<link rel="stylesheet" type="text/css" href="style/search-bar.css">
+		<script src="backbone/lockedBar.js"></script>
+		<script src="backbone/searchalg.js"></script>
+
+
+	</head>
+	<body onload="javascript:window_onload();">
+		<header>
+			<!-- 
+			Place header items here. 
+				- York Logo, student portal, login etc/.
+
+			`-->
+			<img id="logo" src="img/rsz_yorku_logo-trans.png">
+			<div class="login">
+				Welcome back, <a href="">Tonny Lay</a>
+			</div>
+			<br>
+			<h1 id="sp">Student Portal</h1>
+			
+		</header>
+
+						<!-- Place navigation items here. -->
+		<nav id="navbar" class="navbar_absolute">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="news.html">News</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="deptnews.html">Department News</a></li>
+							<li><a href="deptann.html">Announcements</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="transit.html">Transit</a></li>
+				<li><a href="calendar.html">Calendar</a></li>
+				<li><a href="housing.html">Housing</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="oncampus.html">On-Campus</a></li>
+							<li><a href="offcampus.html">Off-Campus</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<form NAME="searchfield" ACTION="" METHOD="GET">
+						<div id="searchbar">
+
+							<input type="text" id="search" placeholder="Search" name="search" width="10" onkeypress="searchKeyPress(event)"
+							>
+							<a href="" onclick="openSearchPage()"><img src="img/search-black.png" id="magnify"></a>
+						</div>
+					</form>
+				</li>			
+			</ul>
+
+		</nav>
+<div style="clear:both"> 
+		<section>
+			<article class="full">
+				
+							<!-- Grab the user's first name and post it in the span below. -->
+					<h1 id="title">
+						Transportation Information</h1>
+
+					<span id="breadcrumb">
+					<a href="home.html">Home</a> > 
+					<a href="transit.html">Transit</a> > Schedules
+					</span>
+			</article>
+
+			
+			<nav id="subnav">
+			<ul>
+				<li><a href="schedules.html" class="subnavlink">Schedules</a></li>
+				<li><a href="fares.html" class="subnavlink">Fares</a></li>
+				<li><a href="service.html" class="subnavlink">Service Alerts</a></li>
+							
+			</ul>
+
+		</nav>
+		Route Search:
+		<div id="rsearch">
+		<form NAME="searchfield" ACTION="" METHOD="GET">
+						<div id="searchbar">
+							<input type="text" id="search" placeholder="ex. 196" name="search" width="10" onkeypress="searchKeyPress(event)"
+							>
+							<a href="" onclick="openSearchPage()"><img src="img/search-black.png" id="magnify"></a>
+						</div>
+					</form>
+					</div>
+		
+		
+	
+					
+		
+			<article class="sfirsthalf">
+
+				<p class="sectionheader">Bus Routes</p>
+				<br>
+				<br>
+				<div>
+				<img class="wheel" src="img/wheelchair.png">
+				<img class="wheel" src="img/bike.png">
+				<a href="schedules.html" class="wheelink">41 Keele</a>
+				</div>
+				<br>
+				<div id="shighlight">
+				<img class="wheel" src="img/wheelchair.png">
+				<img class="wheel" src="img/bike.png">
+				<a href="schedules.html" class="wheelink">60 Steeles West</a>
+				</div>
+				<br>
+				<div>
+				<img class="wheel" src="img/wheelchair.png">
+				<img class="wheel" src="img/bike.png">
+				<a href="schedules.html" class="wheelink">196 York University Rocket</a>
+				</div>
+				<br>
+				
+			</article>
+
+			<article class="ssecondhalf">
+				<p class="ssectionheader">60 Steeles West</p>
+				<br>
+				<br>
+				<div style="float:left;">
+				<img class="salert" src="img/wheelchair.png">
+				
+				<span class="salert2">Accessible Service</span>
+				<br>
+				<br>
+				<img class="salert" src="img/bike.png">
+				
+				<span class="salert2">Bike racks available</span>
+				</div>
+				
+
+
+				<p class="salertlist">The 60 Steeles West bus route operates between Finch Station on the Yonge-University-Spadina Subway, the York University campus, and the area of Steeles Avenue West and Highway 27
+				</p>
+
+
+<div id="ttc_route_page_tabs">
+
+				<ul id="ttc-station-tabs" class="tabs ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all">
+
+					<li><a href="">Westbound (To York)</a></li>
+					<li><a href="">Eastbound (Depart York)</a></li>
+
+
+				</ul>
+			</div>
+<div class="clear"></div>			
+
+				<div id="ttc-dir-1" class="tabContentActive">
+						
+			
+						
+				<div class="ttc-schedule-module">
+					<!-- LEGEND -->
+					<br><br>
+					<h4>Branch Legend</h4>
+					<ul class="legend">
+						<li><span class="branch_B">B</span><span class="branch_text"> 60B STEELES WEST To MARTIN GROVE</span></li>
+						<li><span class="branch_C">C</span><span class="branch_text"> 60C STEELES WEST To YORK UNIVERSITY</span></li>
+						<li><span class="branch_D">D</span><span class="branch_text"> 60D STEELES WEST To HIGHWAY 27</span></li>
+						<li><span class="branch_E">E</span><span class="branch_text"> 60E STEELES WEST To KIPLING EXPRESS</span></li>
+					</ul>
+<div class="clear"></div>
+					<!-- END LEGEND -->	
+
+
+<div id="timed-stops-1" class="tabContentActive">
+					<table cellspacing="0" class="ttc-direction-table">
+				
+						<thead>
+							<tr>
+								<th scope="col" class="stop-name">Stop</th>
+			 					<th scope="col">Number&nbsp;</a></th>
+								<th scope="col">Branch</th>
+								<th scope="col" class="nextbus">Next 3 scheduled buses</th>
+							</tr>
+						</thead>
+						<br>
+
+      				<tr>
+					<td class="stop-name accessible-route"><a href="/Schedule/schedule.jsp?Route=60W&amp;Stop=FINCH_STATION">FINCH STATION</a></td>
+					<td class="stop-number"><ul style="list-style:none"><li><span style="padding:5px 5px 0 0;float:left;margin:1px">14693</span></li></ul></td>					<td class="legend"><ul style="list-style:none"><li style="pading-left:0"><span class="branch_B">B</span><span>&nbsp;</span><span class="branch_C">C</span><span>&nbsp;</span><span class="branch_D">D</span><span>&nbsp;</span><span class="branch_E">E</span></li></ul></td>
+					<td class="next-bus"><ul class="ttc-next-schedule"><li><div style="float: right;"><span class="sched-time">5:34</span><span class="branch_B"><span class="access"> </span>B</span></div></li><li><div style="float: right;"><span class="sched-time">5:40</span><span class="branch_C"><span class="access"> </span>C</span></div></li><li><div style="float: right;"><span class="sched-time">5:45</span><span class="branch_B"><span class="access"> </span>B</span></div></li></ul></td>
+				</tr>
+				<tr class="blue">
+					<td class="stop-name accessible-route"><a href="/Schedule/schedule.jsp?Route=60W&amp;Stop=w.b._on_STEELES_at_YONGE_WEST_SIDE">STEELES at YONGE WEST SIDE</a></td>
+					<td class="stop-number"><ul style="list-style:none"><li><span style="padding:5px 5px 0 0;float:left;margin:1px">8317</span></li></ul></td>					<td class="legend"><ul style="list-style:none"><li style="pading-left:0"><span class="branch_B">B</span><span>&nbsp;</span><span class="branch_C">C</span><span>&nbsp;</span><span class="branch_D">D</span><span>&nbsp;</span><span class="branch_E">E</span></li></ul></td>
+					<td class="next-bus"><ul class="ttc-next-schedule"><li><div style="float: right;"><span class="sched-time">5:35</span><span class="branch_C"><span class="access"> </span>C</span></div></li><li><div style="float: right;"><span class="sched-time">5:40</span><span class="branch_B"><span class="access"> </span>B</span></div></li><li><div style="float: right;"><span class="sched-time">5:46</span><span class="branch_C"><span class="access"> </span>C</span></div></li></ul></td>
+				</tr>
+				<tr>
+					<td class="stop-name accessible-route"><a href="/Schedule/schedule.jsp?Route=60W&amp;Stop=w.b._on_STEELES_at_100">STEELES at 100</a></td>
+					<td class="stop-number"><ul style="list-style:none"><li><span style="padding:5px 5px 0 0;float:left;margin:1px">8300</span></li></ul></td>					<td class="legend"><ul style="list-style:none"><li style="pading-left:0"><span class="branch_B">B</span><span>&nbsp;</span><span class="branch_C">C</span><span>&nbsp;</span><span class="branch_D">D</span><span>&nbsp;</span><span class="branch_E">E</span></li></ul></td>
+					<td class="next-bus"><ul class="ttc-next-schedule"><li><div style="float: right;"><span class="sched-time">5:35</span><span class="branch_C"><span class="access"> </span>C</span></div></li><li><div style="float: right;"><span class="sched-time">5:40</span><span class="branch_B"><span class="access"> </span>B</span></div></li><li><div style="float: right;"><span class="sched-time">5:46</span><span class="branch_C"><span class="access"> </span>C</span></div></li></ul></td>
+				</tr>
+				<tr class="blue">
+					<td class="stop-name accessible-route"><a href="/Schedule/schedule.jsp?Route=60W&amp;Stop=w.b._on_STEELES_at_HILDA">STEELES at HILDA</a></td>
+					<td class="stop-number"><ul style="list-style:none"><li><span style="padding:5px 5px 0 0;float:left;margin:1px">8280</span></li></ul></td>					<td class="legend"><ul style="list-style:none"><li style="pading-left:0"><span class="branch_B">B</span><span>&nbsp;</span><span class="branch_C">C</span><span>&nbsp;</span><span class="branch_D">D</span><span>&nbsp;</span><span class="branch_E">E</span></li></ul></td>
+					<td class="next-bus"><ul class="ttc-next-schedule"><li><div style="float: right;"><span class="sched-time">5:37</span><span class="branch_C"><span class="access"> </span>C</span></div></li><li><div style="float: right;"><span class="sched-time">5:42</span><span class="branch_B"><span class="access"> </span>B</span></div></li><li><div style="float: right;"><span class="sched-time">5:48</span><span class="branch_C"><span class="access"> </span>C</span></div></li></ul></td>
+				</tr>
+				</table>
+
+			
+
+			
+
+		</section>
+		</div>
+			<div style="clear:both"> 
+		<footer id="customfooter">
+			<center id="inline">
+				<span id="copyright">
+					Copyright © 2014 York University
+				</span>
+				<A HREF="" id="pandl">Privacy & Legal</A>
+				<a href="" id="contact">Contact Us</a>
+				Follow us:
+				<span id="social">
+					<a href=""><img src="img/facebook.png"></a>
+					<a href=""><img src="img/twitter.png"></a>
+					<a href=""><img src="img/linkedin.png"></a>
+					<a href=""><img src="img/youtube.png"></a>
+				</span>
+			</center>
+			<div id="address">
+				4700 Keele Street, Toronto, ON, M3J 1P3, Canada
+			</div>
+		</footer>
+		</div>
+	</body>
+<html/>

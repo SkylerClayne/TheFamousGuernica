@@ -1,0 +1,383 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Transportation Information - YU: Student Portal</title>
+
+		<link rel="stylesheet" type="text/css" href="style/main.css">
+		<link rel="stylesheet" type="text/css" href="style/tonny.css">
+
+		<link rel="stylesheet" type="text/css" href="style/nav.css">
+		<script src="backbone/lockedBar.js"></script>
+		<link rel="stylesheet" type="text/css" href="style/search-bar.css">
+		<script src="backbone/lockedBar.js"></script>
+		<script src="backbone/searchalg.js"></script>
+
+
+	</head>
+	<body onload="javascript:window_onload();">
+		<header>
+			<!-- 
+			Place header items here. 
+				- York Logo, student portal, login etc/.
+
+			`-->
+			<img id="logo" src="img/rsz_yorku_logo-trans.png">
+			<div class="login">
+				Welcome back, <a href="">Tonny Lay</a>
+			</div>
+			<br>
+			<h1 id="sp">Student Portal</h1>
+			
+		</header>
+
+						<!-- Place navigation items here. -->
+		<nav id="navbar" class="navbar_absolute">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="news.html">News</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="deptnews.html">Department News</a></li>
+							<li><a href="deptann.html">Announcements</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="transit.html">Transit</a></li>
+				<li><a href="calendar.html">Calendar</a></li>
+				<li><a href="housing.html">Housing</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="oncampus.html">On-Campus</a></li>
+							<li><a href="offcampus.html">Off-Campus</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<form NAME="searchfield" ACTION="" METHOD="GET">
+						<div id="searchbar">
+
+							<input type="text" id="search" placeholder="Search" name="search" width="10" onkeypress="searchKeyPress(event)"
+							>
+							<a href="" onclick="openSearchPage()"><img src="img/search-black.png" id="magnify"></a>
+						</div>
+					</form>
+				</li>			
+			</ul>
+
+		</nav>
+<div style="clear:both"> 
+		<section>
+			<article class="full">
+				
+							<!-- Grab the user's first name and post it in the span below. -->
+					<h1 id="title">
+						Transportation Information</h1>
+
+					<span id="breadcrumb">
+					<a href="home.html">Home</a> > Transit
+
+					</span>
+			</article>
+
+			
+			<nav id="subnav">
+			<ul>
+				<li><a href="schedules.html" class="subnavlink">Schedules</a></li>
+				<li><a href="fares.html" class="subnavlink">Fares</a></li>
+				<li><a href="service.html" class="subnavlink">Service Alerts</a></li>
+							
+			</ul>
+
+		</nav>
+		Route Search:
+		<div id="rsearch">
+		<form NAME="searchfield" ACTION="" METHOD="GET">
+						<div id="searchbar">
+							<input type="text" id="search" placeholder="ex. 196" name="search" width="10" onkeypress="searchKeyPress(event)"
+							>
+							<a href="" onclick="openSearchPage()"><img src="img/search-black.png" id="magnify"></a>
+						</div>
+					</form>
+					</div>
+		
+		
+	
+					
+		
+			<article class="firsthalf">
+
+				<p class="sectionheader">Your Upcoming Departure Buses</p>
+				<br>
+				<br>
+				<select style="margin-top:5px"  class="transit1" id='transitMode' onchange='changeTransitMode()'>
+											<option value="Leave Now">Leave Now</option>
+											<option value="Depart At">Depart At</option>
+											<option value="Arrive At">Arrive At</option>
+										</select>
+										<input class="transit1" style="width:115px;" type='text' id='transitDate' value='MM/DD/YYYY' disabled='true' onclick='javascript: if (this.value == "MM/DD/YYYY") this.value = ""'></input>
+							
+										<select maxlength="10" id="hour" name="hour">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                 :
+                <select maxlength="10" id="minute" name="minute"> 
+                        <option value="00">00</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                        <option value="54">54</option>
+                        <option value="55">55</option>
+                        <option value="56">56</option>
+                        <option value="57">57</option>
+                        <option value="58">58</option>
+                        <option value="59">59</option>                    				
+                    </select>
+
+										<select maxlength="10" id="ampm" name="ampm">
+                        <option value="a">AM</option>
+                        <option value="p">PM</option>
+                    </select>
+            <button type='button' id='defaultDirections' class = 'button_new' onclick='javascript: getDirections(currentDirectionsMode)'>Get Routes</button>
+				
+<br>
+<br>
+				<a href="" id="subheading">(No. 60) Steeles West: (York Lanes Stop)</a>
+
+				<table>
+					<tr>
+						<td rowspan="3" id="tablehead">16:00</td>
+						<td><img src="img/60C.png" class="test"><span class="test">16:00
+						</span></td>
+						<td><img src="img/60C.png">
+							16:04
+						</td>
+						<td><img src="img/60C.png">
+							16:08
+						</td>
+						<td><img src="img/60C.png">
+							16:12
+						</td>
+						<td><img src="img/60C.png">
+							16:16
+						</td>
+						<td><img src="img/60C.png">
+							16:20
+						</td>
+					</tr>
+					<tr>
+						<td><img src="img/60C.png">
+							16:24
+						</td>
+						<td><img src="img/60C.png">
+							16:28
+						</td>
+						<td><img src="img/60C.png">
+							16:32
+						</td>
+						<td><img src="img/60C.png">
+							16:36
+						</td>
+						<td><img src="img/60C.png">
+							16:40
+						</td>
+						<td><img src="img/60C.png">
+							16:44
+						</td>
+					</tr>
+					<tr>
+						<td><img src="img/60C.png">
+							16:48
+						</td>
+						<td><img src="img/60C.png">
+							16:52
+						</td>
+						<td><img src="img/60C.png">
+							16:56
+						</td>
+					</tr>
+				</table>
+
+				<hr>
+				<a href="" id="subheading">(No. 196) York University Rocket: (York Lanes Stop)</a>
+
+<table>
+					<tr>
+						<td rowspan="3" id="tablehead">16:00</td>
+						<td><img src="img/196B.png">
+							16:00
+						</td>
+						<td><img src="img/196A.png">
+							16:04
+						</td>
+						<td><img src="img/196B.png">
+							16:08
+						</td>
+						<td><img src="img/196A.png">
+							16:12
+						</td>
+						<td><img src="img/196B.png">
+							16:16
+						</td>
+						<td><img src="img/196A.png">
+							16:20
+						</td>
+					</tr>
+					<tr>
+						<td><img src="img/196B.png">
+							16:24
+						</td>
+						<td><img src="img/196A.png">
+							16:28
+						</td>
+						<td><img src="img/196B.png">
+							16:32
+						</td>
+						<td><img src="img/196A.png">
+							16:36
+						</td>
+						<td><img src="img/196B.png">
+							16:40
+						</td>
+						<td><img src="img/196A.png">
+							16:44
+						</td>
+					</tr>
+					<tr>
+						<td><img src="img/196B.png">
+							16:48
+						</td>
+						<td><img src="img/196A.png">
+							16:52
+						</td>
+						<td><img src="img/196B.png">
+							16:56
+						</td>
+					</tr>
+				</table>
+				<hr>
+				
+			</article>
+
+			<article class="secondhalf">
+				<p class="sectionheader">Your Latest Service Alerts</p>
+				<br>
+				<br>
+				<div class="alert">
+				<img src="img/youralert.png">
+				</div>
+				<div class="alertlink">
+				<a href="service.html">There are 10 alerts affecting your routes.</a>
+				</div>
+				<p class="alertlist">196 York University Rocket route diverting via Macpherson due to construction on Davenport at Spadina.
+				<br><span class="subalertlist">Last updated 12:25 PM</span></p>
+
+				<p class="alertlist">196 York University Rocket route diverting via Macpherson due to construction on Davenport at Spadina.
+				<br><span class="subalertlist">Last updated 12:25 PM</span></p>
+				<hr>
+
+
+				<div class="alert">
+				<img src="img/otheralert.png">
+				</div>
+				<div class="alertlink">
+				<a href="service.html">There are 10 alerts affecting other routes</a>
+				</div>
+				<p class="alertlist">196 York University Rocket route diverting via Macpherson due to construction on Davenport at Spadina.
+				<br><span class="subalertlist">Last updated 12:25 PM</span></p>
+
+				<p class="alertlist">196 York University Rocket route diverting via Macpherson due to construction on Davenport at Spadina.
+				<br><span class="subalertlist">Last updated 12:25 PM</span></p>
+				
+			</article>
+
+			
+
+			
+
+		</section>
+		</div>
+			<div style="clear:both"> 
+		<footer id="customfooter">
+			<center id="inline">
+				<span id="copyright">
+					Copyright © 2014 York University
+				</span>
+				<A HREF="" id="pandl">Privacy & Legal</A>
+				<a href="" id="contact">Contact Us</a>
+				Follow us:
+				<span id="social">
+					<a href=""><img src="img/facebook.png"></a>
+					<a href=""><img src="img/twitter.png"></a>
+					<a href=""><img src="img/linkedin.png"></a>
+					<a href=""><img src="img/youtube.png"></a>
+				</span>
+			</center>
+			<div id="address">
+				4700 Keele Street, Toronto, ON, M3J 1P3, Canada
+			</div>
+		</footer>
+		</div>
+	</body>
+<html/>

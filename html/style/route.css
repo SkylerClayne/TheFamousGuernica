@@ -1,0 +1,1463 @@
+#ttc-local-nav h4 {font-size:92%;background:#000;color:#fff;padding:10px;border-bottom:1px solid #fff;_margin:0;} 
+#ttc-local-nav h4 a {color:#fff;}
+
+#ttc-grid-content #ttc-local-nav ul li ul#bus-names li a, #ttc-grid-content #ttc-local-nav ul li ul#streetcar-names li a {color:#000;}
+
+#ttc-grid-content #ttc-local-nav ul li ul#bus-names li, #ttc-grid-content #ttc-local-nav ul li ul#streetcar-names li {padding:3px 5px 3px 65px;text-indent:-25px;color:#000; border-bottom:1px solid #e4e3e3;font-size:92%;_font-size:90%;_margin-right:-55px;_width:95px;}
+
+#ttc-grid-content #ttc-local-nav ul li ul#bus-names li.accessible-route, #ttc-grid-content #ttc-local-nav ul li ul#streetcar-names li.accessible-route {background:url('/images/fixedImages/ttc-icon-route-access-b.gif') 3px 3px no-repeat;_background:url('/images/fixedImages/ttc-icon-route-access-b.gif') 3px 5px no-repeat;}
+
+#ttc-grid-content #ttc-local-nav ul li ul#bus-names li.bicycle-route, #ttc-grid-content #ttc-local-nav ul li ul#streetcar-names li.bicycle-route {background:url('/images/fixedImages/bicycle-icon.gif') 18px 4px no-repeat;_background:url('/images/fixedImages/bicycle-icon.gif') 18px 4px no-repeat;}
+
+#ttc-grid-content #ttc-local-nav ul li ul#bus-names li.accessible-bicycle-route, #ttc-grid-content #ttc-local-nav ul li ul#streetcar-names li.accessible-bicycle-route {background:url('/images/fixedImages/accessible-bike-icon.gif') 3px 3px no-repeat;_background:url('/images/fixedImages/accessible-bike-icon.gif') 3px 5px no-repeat;}
+
+#ttc-grid-content #ttc-local-nav ul li ul#bus-names li a:hover, #ttc-grid-content #ttc-local-nav ul li ul#streetcar-names li a:hover, #ttc-grid-content #ttc-local-nav ul li ul.stations li a:hover, #ttc-grid-content #ttc-local-nav ul li ul.stations li a:focus {text-decoration:underline;}
+
+#ttc-grid-content #ttc-local-nav ul li ul#bus-names li.active, 
+#ttc-grid-content #ttc-local-nav ul li ul#streetcar-names li.active 
+{color:#fff; background-color:#535353;}
+
+/*#ttc-grid-content #ttc-local-nav ul li ul#bus-names li.active.accessible-route, 
+#ttc-grid-content #ttc-local-nav ul li ul#streetcar-names li.active.accessible-route 
+{color:#fff; background:#535353 url('/images/fixedImages/ttc-icon-route-access-b.gif') 3px 3px no-repeat;_background:#535353 url('/images/fixedImages/ttc-icon-route-access-b.gif') 3px 5px no-repeat;}*/
+
+#ttc-grid-content #ttc-local-nav ul li ul#bus-names li.active a, #ttc-grid-content #ttc-local-nav ul li ul#streetcar-names li.active a {color:#fff;}
+
+#ttc-local-nav ul#general-information{margin:1px 0 0 0; padding:0;_padding:0;_margin:1px 0 0 0;}
+#ttc-local-nav ul#general-information li{margin:0;padding:0 ;*padding:0;_padding:0;border-bottom:1px solid #fff;}
+#ttc-local-nav ul#general-information li a.title, #ttc-local-nav ul#general-information li span.title{border-bottom:none;}
+#ttc-local-nav ul#general-information li a:hover, #ttc-local-nav ul#general-information li a:focus{text-decoration:underline;}
+#ttc-local-nav ul#general-information li span.active.title{color:#fff;font-weight:bold;}
+
+/*
+#ttc-local-nav ul#ttc-maps{margin:1px 0 0 0; padding:0;_padding:0;_margin:1px 0 0 0; border-bottom:0;}
+#ttc-local-nav ul#ttc-maps li{margin:0;padding:0 ;*padding:0;_padding:0;}
+
+#ttc-local-nav ul#ttc-maps li ul.maps{margin:1px 0 0 0; padding:0;_padding:0;_margin:1px 0 0 0;}
+#ttc-local-nav ul#ttc-maps li ul.maps li{margin:0;padding:3px 5px 3px 0px ;*padding:3px 5px 3px 0px;_padding:3px 5px 3px 0px; background:#fff; border-top:1px solid #E4E3E3;}
+#ttc-local-nav ul#ttc-maps li ul.maps li.active {margin:0;padding:3px 5px 3px 20px ;*padding:3px 5px 3px 20px;_padding:3px 5px 3px 20px; color:#fff; background:#535353; border-top:1px solid #E4E3E3;}
+
+#ttc-local-nav ul#ttc-maps li ul.maps li a{color:#000; display:block; background:#fff; padding:0 0 0 20px;}
+#ttc-local-nav ul#ttc-maps li ul.maps li a:hover{text-decoration:underline;}
+
+#ttc-local-nav ul#ttc-maps li ul.maps li span.active{color:#fff; background-color:#535353;padding:0;}
+*/
+
+/* TTC Station Template Specific Styles */
+#ttc-main-content.route .route-heading{padding:0 0 20px 0;}
+#ttc-main-content.route .route-heading:after {clear:both;display:block;content:".";height:0;visibility:hidden;}
+#ttc-main-content.route h1#ttc-route-name {display:inline;font-size:100%;line-height:1.2em;font-family:trebuchet ms, verdana, helvetica, sans-serif;margin-right:5px;}
+#ttc-main-content.route h1#ttc-route-name img {display:inline;vertical-align:middle;margin:0 0 0 10px;}
+#ttc-main-content.route .route-heading img{margin: 0 5px;}
+#ttc-main-content.route p {/*font-size:92%;*/margin:0 0 10px 0;}
+#ttc-main-content.route p a:hover, #ttc-main-content.route p a:focus {text-decoration:underline;}
+#ttc-main-content.route div.access {position:absolute;top:-10em;left:-999em;}
+#ttc-main-content.route h2 a {font-size:100%;line-height:1.4em;font-weight:normal;margin:0 0 20px 0;}
+#ttc-main-content.route div#ttc-dir-1.tabContentActive, #ttc-main-content.route div#ttc-dir-2.tabContent,
+#ttc-main-content.route div#ttc-route-map.tabContent{
+position: relative;
+left: 230px;
+  border:1px solid #d2e1e8;/*border-bottom:2px solid #000; padding-top:10px;*/*position:relative;*z-index:98;}
+
+#ttc-main-content.route div#ttc-dir-1.tabContentActive .tabRoute{padding:10px 10px 0;}
+
+/* TTC Schedule Grid Styles */
+.tabContent {display:none;}
+.tabContent.tabContentActive {display:block;}
+.ttc-schedule-module {*height:1%;*position:relative;*z-index:99;}
+.ttc-schedule-module:after {clear:both;display:block;content:".";height:0;visibility:hidden;}
+.ttc-schedule-module .ttc-next {display:inline;font-size:80%;}
+
+.ttc-schedule-module h5 {margin:15px 10px;font-weight:bold;}
+
+/* TTC Route page top tab styles */ 
+ul#ttc-route-tabs {list-style:none;border-bottom:none;margin:20px 0 0 0;*height:1%;}
+
+ul#ttc-route-tabs:after {clear:both;display:block;content:".";height:0;visibility:hidden;}
+
+/*ul#ttc-route-tabs li {float:left;font-size:100%;_font-size:100%;background:#fff url("/images/fixedImages/ttc-sched-nav_off.gif") no-repeat 0 0;margin:0 2px 0 0;padding:4px 0 4px 8px;text-align:center;}
+
+ul#ttc-route-tabs li a {text-decoration:none;background:url("/images/fixedImages/ttc-sched-nav-a_off.gif") no-repeat top right;padding:4px 8px 4px 0;*padding:6px 8px 4px 0;color:#104ba5;} 
+ul#ttc-route-tabs li.selected {float:left;background:#fff url("/images/fixedImages/ttc-sched-nav-a.gif") no-repeat top right;
+margin:0 2px 0 0;padding:0px 8px 0px 0;text-align:center; z-index:990;}
+ul#ttc-route-tabs li.selected h3{text-decoration:none;background:url("/images/fixedImages/ttc-sched-nav.gif") no-repeat top left;color:#000;font-weight:bold;text-align:center;padding:4px 0 9px 8px;_padding:4px 0 9px 8px;margin:0 0 -5px 0;}
+*/
+
+.ttc-schedule-module li h3 {font-size:100%;font-weight:normal;margin:0;padding:0;}
+  
+/* TTC Route page top tab styles */ 
+ul.ttc-route-sort {list-style:none;padding:5px 10px 10px 10px; *height:1%;}
+ul.ttc-route-sort:after {clear:both;display:block;content:".";height:0;visibility:hidden;}
+ul.ttc-route-sort li {float:left;/*font-size:92%;*/margin:0 10px 0 0;border-right:#000 1px solid;padding:0 10px 0 0;}
+ul.ttc-route-sort li.last {float:left;/*font-size:92%;*/margin:0 10px 0 0;border-right:none;}
+ul.ttc-route-sort li a:hover, ul.ttc-route-sort li a:focus {text-decoration:underline;}
+ul.ttc-route-sort li a#timed-stop, ul.ttc-route-sort li#timed-stop{background:url("/images/fixedImages/ttc-icon-timed-stops.gif") no-repeat top left; padding: 0 10px 0px 20px;display:block;}
+ul.ttc-route-sort li a#accessible-stop, ul.ttc-route-sort li#accessible-stop{background:url("/images/fixedImages/ttc-icon-route-access.gif") no-repeat top left; padding: 0 0 5px 20px;display:block;}
+ul.ttc-route-sort li a:hover img, ul.ttc-route-sort li a:focus img{text-decoration:none;}
+ul.ttc-route-sort li.selected, ul.ttc-route-sort li.selected a, ul.ttc-route-sort li.selected a:hover {color:#000;font-weight:bold;text-decoration:none;background-color:white !important;}
+ul.ttc-route-sort li.selected a:focus {color:#000;font-weight:bold;text-decoration:none;background-color:white !important;}
+ul.ttc-route-sort li.selected img{vertical-align:middle;}
+
+.ttc-schedule-module .schedule-info {background-color:#4b4f50;background:url("/images/fixedImages/ttc-station-info-bg.gif") repeat-x 0 0;padding:6px 10px 5px 10px;color:#fff;}
+.ttc-schedule-module .schedule-info h3 {/*font-size:92%;*/margin:0 0 8px 0;}
+.ttc-schedule-module .schedule-info p {/*font-size:92%;*/line-height:1.1em;}  
+.ttc-schedule-module .time {display:inline;vertical-align:top;margin:0 5px 0 0;}
+
+.ttc-schedule-module h4 {/*font-size:92%;*/font-weight:normal;margin:0 0 4px 10px;}
+.ttc-schedule-module .legend {list-style:none;}
+  .ttc-schedule-module .legend li {padding:0 0 0px 0px; clear:both;}
+  .ttc-schedule-module .legend li img {margin:0 10px 0 17px;vertical-align:middle;}
+  .ttc-schedule-module .legend li span {/*font-size:92%;*/vertical-align:middle; float:left;}
+  .ttc-schedule-module .legend li span.branch_text {padding-top:5px;}
+/* TTC Schedule Table Styles */
+table.ttc-direction-table {margin:8px 0 -1px 0;width:100%; /*padding-bottom:20px;*/}
+table.ttc-direction-table tr {height:1.8em;margin:0;padding:0;}
+table.ttc-direction-table thead tr th {padding:6px 0px 5px 10px;background:url("/images/fixedImages/ttc-ccol-stat-promo-bg.gif") repeat-x 0 0; font-weight:normal;color:#000;/*font-size:92%;*/}  
+table.ttc-direction-table thead tr th.nextbus {text-align:left;}
+table.ttc-direction-table tr td {/*font-size:92%;*/}
+table.ttc-direction-table tr td a {text-decoration:underline;}
+table.ttc-direction-table tr td a:hover, table.ttc-direction-table tr td a:focus {text-decoration:none;}
+table.ttc-direction-table tr.blue td {background-color:#f4f6f7;}
+table.ttc-direction-table tr.hoverColor td {background-color:#fdfed6;cursor:pointer;}
+
+table.ttc-direction-table tr td.legend {width:25%;text-align:left;vertical-align:top;padding:5px 0 0 10px;}
+table.ttc-direction-table tr td.legend img {display:inline;margin:0 5px 0 0;}
+table.ttc-direction-table tr td.legend span{float:left; vertical-align:top;}
+
+table.ttc-direction-table tr td.stop-name {width:45%;padding:5px 3px 2px 40px;}
+
+
+
+
+
+table.ttc-direction-table tr td.stop-name.accessible-route{background:url('/images/fixedImages/ttc-icon-route-access-b.gif') 3px 5px no-repeat;_background:url('/images/fixedImages/ttc-icon-route-access-b.gif') 3px 5px no-repeat;}
+
+table.ttc-direction-table tr td.stop-name.bicycle-route{background:url('/images/fixedImages/bicycle-icon.gif') 3px 5px no-repeat;_background:url('/images/fixedImages/bicycle-icon.gif') 3px 5px no-repeat;}
+
+table.ttc-direction-table tr td.stop-name.accessible-bicycle-route{background:url('/images/fixedImages/accessible-bike-icon.gif') 3px 5px no-repeat;}
+
+
+
+
+
+
+
+table.ttc-direction-table tr.blue td.stop-name.accessible-route{background:#f4f6f7 url('/images/fixedImages/ttc-icon-route-access-b.gif') 3px 5px no-repeat;_background:#f4f6f7 url('/images/fixedImages/ttc-icon-route-access-b.gif') 3px 5px no-repeat;}
+
+table.ttc-direction-table tr.hoverColor td.stop-name.accessible-route{background:#fdfed6 url('/images/fixedImages/ttc-icon-route-access-b.gif') 3px 5px no-repeat;_background:#fdfed6 url('/images/fixedImages/ttc-icon-route-access-b.gif') 3px 5px no-repeat;
+cursor:pointer;}
+
+table.ttc-direction-table tr td.stop-name a {vertical-align:middle;}
+table.ttc-direction-table tr td.stop-name img {vertical-align:middle;margin:0 0 0 5px;}
+table.ttc-direction-table tr td.next-bus {width:30%;margin:0;vertical-align:middle;text-align:left;padding-right:50px;}
+table.ttc-direction-table tr td.next-bus img {vertical-align:middle;margin:0 0 0 5px;}
+
+table.ttc-direction-table tr td.next-bus div.time{float:left; text-align:right;margin-bottom:2px;padding-top:2px;}
+table.ttc-direction-table tr td.next-bus div.icon{float:right; text-align:left;margin-bottom:2px;}
+table.ttc-direction-table tr td.next-bus div.icon span{margin:0px;}
+  
+
+  
+/* TTC Stattion C Column Styles */
+#ttc-ccol-content .ttc-service-alert {margin:0 0 10px 0;}
+#ttc-ccol-content .route-information {margin:0 0 10px 0;}
+#ttc-ccol-content .route-information h3 {background:url("/images/fixedImages/ttc-ccol-stat-promo-bg.gif") repeat-x 0 0;padding:4px 3px 4px 5px;color:#000;font-size:100%;font-family:trebuchet ms, verdana, helvetica, sans-serif;font-weight:bold;line-height:1.1em}
+  
+#ttc-ccol-content .route-information .route-information-content {border-top:1px solid #dee6e9;padding:8px 5px 8px 4px;/*font-size:92%;*/background-color:#fff;}
+#ttc-ccol-content .route-information .route-information-content ul, #ttc-ccol-content .promo .promo-content ul {list-style:none;padding:0 0 0 0;}
+#ttc-ccol-content .route-information .route-information-content ul li, #ttc-ccol-content .promo .promo-content ul li {margin:0 0 0 0;padding:2px 10px 1px .8em;background:url("/images/fixedImages/ttc-homepage-list-indicator.gif") no-repeat 0 .5em;}
+#ttc-ccol-content .route-information .route-information-content ul li a:hover, #ttc-ccol-content .route-information .route-information-content ul li a:focus {text-decoration:underline;}
+
+#ttc-ccol-content .promo .promo-content{/*font-size:92%;*/ margin:15px 0 20px 0; padding-left:5px;}
+#ttc-ccol-content .promo .promo-content a{}
+#ttc-ccol-content .promo .promo-content a:hover,#ttc-ccol-content .promo .promo-content a:focus{text-decoration:underline;}
+
+#ttc-ccol-content .promo .promo-content a img{}
+#ttc-ccol-content .promo .promo-content a:hover img,#ttc-ccol-content .promo .promo-content a:focus img{text-decoration:none;}
+
+#ttc-main-content .main-content ul{padding: 0 0 20px 10px ;/*padding: 0 0 20px 5px ;_padding: 0 0 20px 15px ;*/}
+#ttc-main-content .main-content ul.ttc-keymaplinks{padding: 0 0 20px 15px ;*padding: 0 0 20px 20px ;_padding: 0 0 20px 20px ;}
+#ttc-main-content .main-content ul li {/*font-size:92%;*/margin: 0 4px 0 0;}
+
+.content h1 {font-size:100%;padding:0px 0 0 0; font-family:trebuchet ms, verdana, helvetica, sans-serif;}
+.content h2 {font-size:100%;padding:3px 0;margin:0 0 5px 0;color:#535353}
+.content h2.find-results {font-weight:normal;margin:0px 0 25px 0px;_margin:0px 0 25px 0px;font-size:100%; padding:0 0 5px 0; border-bottom:1px solid #000;}
+.content .main-content {border-top:2px solid #4c4f50;margin:1px 0 0 0;padding:20px 0 0 0;background:url("/images/content-inner-gradie.gif") repeat-x;}
+.content p {margin:0 0 20px 0;/*font-size:92%;*/} 
+
+.content ol {margin:10px 0 20px 20px;*margin:10px 0 20px 25px;/*font-size:92%;*/} 
+.content ol ul {margin:5px 0 5px 20px;} 
+
+
+.content .no-margin {margin:0;}
+
+.content h3 {font-weight:bold;margin:15px 0 13px 0;font-size:100%; font-family:trebuchet ms, verdana, helvetica, sans-serif;}
+
+.content .col-list h3 {font-weight:bold;margin:15px 0 13px 0;font-size:100%; font-family:trebuchet ms, verdana, helvetica, sans-serif;border-bottom:1px solid #000;line-height:1.1em;}
+
+.content h3.adv-search-desc {font-weight:normal;margin:0 0 20px 0; padding:0 0 5px 0; border-bottom:0;}
+
+.content a:hover, .content a:focus {text-decoration:underline;} 
+
+.content .col-list {float:left;margin:0 15px 0 0;_margin:0;width:110px;}
+.content .col-list.last {float:left;margin:0;width:110px;}
+.content .col-list ul {list-style-type:none; color:#0f4da3;margin:0 0 35px 0;_margin:0 0 10px 0;}
+.content .col-list ul li.title {font-weight:bold;border-bottom:1px solid #4c4f50;padding:0 0 5px 0;margin:0 0 10px 0;}
+.content .col-list ul li.title2 {font-weight:bold;border-bottom:1px solid #4c4f50;padding:0 0 5px 0;margin:0 0 10px 0;color:#4c4f50;}
+
+.content .col-list ul li{padding:3px 0px 3px 61px;text-indent:-28px;/*border:1px solid #e4e3e3; border-top:none;*/}
+/*.content .col-list.last ul li{border-right:none;}*/
+
+
+
+
+.content .col-list ul li.accessible-route{background:url('/images/fixedImages/ttc-icon-route-access-b.gif') left 5px no-repeat;}
+.content .col-list ul li.accessible-route span{background:url('/images/fixedImages/ttc-icon-route-access-b.gif') left 5px no-repeat;}
+.content .col-list ul li.bicycle-route{background:url('/images/fixedImages/bicycle-icon.gif') 16px 5px no-repeat;}
+.content .col-list ul li.accessible-bicycle-route{background:url('/images/fixedImages/accessible-bike-icon.gif') left 5px no-repeat;}
+
+
+
+
+
+
+/*
+.content .col.first {float:left;margin:0 12px 15px 0;padding:10px 0 10px 0;_padding:0 0 30px 0;_margin:0 20px 0 5px; }
+.content .col {float:left;margin:0 0 15px 0;padding:10px 0 15px 0;_padding:10px 0 15px 0;_margin:8px 15px 0 10px; border-top:1px solid #4c4f50;}
+.content .col.border-btm {border-top:none;_padding:0 0 30px 0;}
+*/
+
+.content .col ul, content .main-sontent .col ul {margin:5px 0 0 15px;}
+
+.content .col h3,.content .col.first h3 {font-size:100%;margin:0 0 5px 0;font-family:trebuchet ms, verdana, helvetica, sans-serif; border:none;}
+.content .col {float:left;margin:0 0 15px 0;padding:10px 0 0 0;_padding:10px 0 0 0;_margin:0px 15px 0 10px; border-top:1px solid #4c4f50;width:180px;}
+
+.content .col.first {float:left;margin:0 12px 15px 0;padding:10px 0 0 0;_padding:10px 0 0 0;_margin:0 0px 0 0px; width:180px;}
+
+.content .col.border-btm {border-top:none;_padding:0 0 0 0;}
+
+#int-map-thumb{display:block;padding-bottom:122px;background:url("/images/fixedImages/subway_rt_map_w2_sm.gif") no-repeat bottom left;}
+
+
+
+.ttc-next-schedule {list-style:none;width:100%;}
+.ttc-next-schedule li { margin-left:0.7em;text-align:right;clear:both; float:right; /*margin-right:10px;*/  display: inline; width: 130px; }
+ul.ttc-next-schedule li.tomorrow {/*width:11em;_width:11em;*/}
+.ttc-next-schedule li span 
+  { float:left; }
+.ttc-next-schedule li span.sched-time 
+  {padding:5px 5px 0 0; float:left;/* display:block;clear:both;*/white-space:nowrap;}
+
+#ttc-main-content.route h6 {font-weight:normal;font-size:100%; font-family:trebuchet ms, verdana, helvetica, sans-serif;line-height:1.1em; margin:5px 0 6px 0;} 
+#ttc-main-content.route h6 img{vertical-align:bottom;}
+#ttc-main-content.route .alert-content p {margin:0 0 0 15px;}
+#ttc-main-content.route .alert-content p.alert-updated {margin:0 0 25px 15px;}
+
+.advisory-wrap{margin-top:20px; margin-bottom:0px;}
+
+ 
+div #help-tooltips {margin-top:40px;}
+div #help-tooltips h3 {font-size:100%;margin-bottom:10px;padding:0 0 5px;}
+
+
+/*TRIP PLANNER*/
+#trip-plan-cont{/*border: 1px solid #d2e1e8; border-bottom:2px solid #000;*/}
+
+#ttc-trip-planner{_width:90%;_position:relative;}
+
+#ttc-trip-planner #origin-left, 
+#ttc-trip-planner #destination-left{border:none; float:left; padding-right:10px; width:100%; margin-bottom:0px;}
+#ttc-trip-planner #destination-left{margin-bottom:20px;}
+
+#ttc-trip-planner #origin-left h4, 
+#ttc-trip-planner #destination-left h4{width:15%; font-size:100%; font-family:trebuchet ms, verdana, helvetica, sans-serif; display:inline;}
+
+#ttc-trip-planner #origin-left label .required, 
+#ttc-trip-planner #destination-left label .required{ float:none; display:inline; margin-left:2px; _margin-left:0px; padding:0 0 0 5px; _padding:0px; background:url("/images/fixedImages/asterisk.gif") no-repeat 0 0;}
+
+#ttc-trip-planner #origin-left span, 
+#ttc-trip-planner #destination-left div{display:block; float:right; width:84%; margin:10px 0 0;}
+
+#ttc-trip-planner #origin-left h4 span{width:15%; float: left; margin:10px 0 0 0;}
+
+#ttc-trip-planner #origin-left input, 
+#ttc-trip-planner #destination-left input{width:70%; float:left;}
+
+
+#ttc-trip-planner #destination-left{position:relative;}
+#ttc-trip-planner #destination-left h4{float:left;}
+#ttc-trip-planner #destination-left h4, #ttc-trip-planner #destination-left div{ margin-top:35px; position:relative;}
+#ttc-trip-planner #destination-left div.dirSwap{position:absolute; top:0; left:0; margin:0;_position:relative;_margin-top:-53px;_left:-75px;}
+
+#tp-ln-input, #tp-mo-input {width:auto !important;}
+#tp-mo-input{_margin-top:5px;}
+#tp-ln-input input{margin:0 10px 0 93px;}
+#tp-ln-input img{vertical-align:text-top;}
+#tp-ln-input label{}
+#tp-ln-input .help{margin-left:3px;}
+#ttc-trip-planner .btn{margin:20px 0 0 95px;}
+#ttc-trip-planner .more-options{background:none; border:none; color:#104ba5; text-decoration:underline; cursor:pointer; margin-top:0;}
+
+
+/*  NEW TABS  */
+
+ul#ttc-route-tabs li a:hover, ul#ttc-route-tabs li a:focus {text-decoration:underline;}
+
+ul#ttc-route-tabs li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 0px 0; border:1px solid #d2e1e8; padding: 0; white-space: nowrap; background:url("/images/fixedImages/tab-bg.jpg") repeat-x 0 bottom;}
+ul#ttc-route-tabs li a, ul#ttc-route-tabs li h3 { float: left; padding: .5em 1em 1px; text-decoration: none; background:none;}
+ul#ttc-route-tabs li.selected { margin-bottom: 0; background:#fff url("/images/fixedImages/tab-bg-active.jpg") repeat-x 0 0; border-bottom:none; padding-bottom:1px;}
+ul#ttc-route-tabs li.selected h3{background:none; color:#000; font-weight:bold;}
+
+/*------------1024 ROUTE CSS--------------*/
+
+/*table.ttc-direction-table {width:617px;_width:607px;}
+table.ttc-direction-table tr td.legend {width:95px;}
+table.ttc-direction-table tr td.stop-name {width:412px;}
+table.ttc-direction-table tr td.next-bus {width:100px;}*/
+table.ttc-direction-table tr td.next-bus div.time{width:70px}
+table.ttc-direction-table tr td.next-bus div.icon{width:20px}
+.content .main-content{_width:599px;}
+.content .col.first {width:296px;_width:260px;}
+.content .col {width:308px;_width:260px;}
+.content .col-list {width:189px;_width:165px;}
+.content .col-list.last {width:189px;_width:165px;}
+.content .col-list ul {width:189px;_width:160px;}
+.content .col-list ul.parking, .content .col-list.last ul.parking {width:189px;_width:160px;}
+
+
+<<<<<<< .working
+/*
+ * jQuery UI Tabs @VERSION
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+.ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; /*border-bottom: 0 !important;*/ padding: 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; padding:0.5em 1em 1px; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em 1.4em; background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+/*OVERRIDES */
+
+
+#ttc-dir-1 { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+#ttc-dir-1 .ui-tabs-nav { margin: 0; padding: 0;}
+#ttc-dir-1 .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 0px 0; border:1px solid #d2e1e8; padding: 0; white-space: nowrap; background:url("/images/fixedImages/tab-bg.jpg") repeat-x 0 bottom; }
+#ttc-dir-1 .ui-tabs-nav li a { float: left; padding: .5em 1em 1px; text-decoration: none; background:none; }
+#ttc-dir-1 .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; background:#fff url("/images/fixedImages/tab-bg-active.jpg") repeat-x 0 0; border-bottom:none; z-index:999; padding-bottom:1px; }
+#ttc-dir-1 .ui-tabs-nav li.ui-tabs-selected a { background:none; color:#000; font-weight:bold; }
+#ttc-dir-1 .ui-tabs-nav li.ui-tabs-selected a:hover{text-decoration:none;}
+#ttc-dir-1 .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+#ttc-dir-1 .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+#ttc-dir-1 .ui-tabs-panel { display: block; border-width: 0; padding: 20px 10px; background: none; border:1px solid #d2e1e8; position:relative; z-index:998; _width:500px; }
+#ttc-dir-1 .ui-tabs-panel ul { margin:10px 25px; }
+#ttc-dir-1 .ui-tabs-hide { display: none !important; }
+#ttc-dir-1 #tabMap, #ttc-dir-1 #tabRoute { border:none; }
+#ttc_route_page_tabs { position: relative; padding:0 .2em 0 0; zoom: 1; z-index:99; margin-top:10px; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+#ttc_route_page_tabs .ui-tabs-nav { margin: 0; padding: 0; }
+#ttc_route_page_tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 0px 0; border:1px solid #d2e1e8; padding: 0; white-space: nowrap; background:url("/images/fixedImages/tab-bg.jpg") repeat-x 0 bottom; }
+#ttc_route_page_tabs .ui-tabs-nav li a { float: left; padding: .5em 1em 1px; text-decoration: none; background:none; }
+#ttc_route_page_tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; background:#fff url("/images/fixedImages/tab-bg-active.jpg") repeat-x 0 0; border-bottom:none; padding-bottom:1px; *padding-bottom:2px; }
+#ttc_route_page_tabs .ui-tabs-nav li.ui-tabs-selected a { background:none; color:#000; font-weight:bold; }
+#ttc_route_page_tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+#ttc_route_page_tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+#ttc_route_page_tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em .75em; background: none; border:1px solid #d2e1e8; }
+#ttc_route_page_tabs .ui-tabs-panel ul { margin:10px 25px; }
+#ttc_route_page_tabs .ui-tabs-hide { display: none !important; }
+/*MERGE TO station.css*/
+.station h3 { margin:0px 0 0px 0; font-size:100%; /* font-weight:bold;*/
+/*  font-size:140%;*/
+/*  font-family:trebuchet ms, verdana, helvetica, sans-serif;*/
+ clear:both; line-height:1.1em; }
+.station a.ttc-back-to-top { float:right; padding-top:25px; }
+.station-bottom-info img { background:#fff; padding:3px; border: 1px solid #d2e1e8; float:left; margin: 0 10px 10px 0; }
+#ttc-trip-planner { _width:90%; position:relative; }
+#ttc-trip-planner #origin-left, #ttc-trip-planner #destination-left { border:none; float:left; padding-right:10px; width:100%; margin-bottom:0px; position:relative; }
+#ttc-trip-planner #destination-left { margin-bottom:20px; position:relative; }
+#ttc-trip-planner #origin-left h4, #ttc-trip-planner #destination-left h4 { width:15%; font-size:100%; font-family:trebuchet ms, verdana, helvetica, sans-serif; display:inline; }
+#ttc-trip-planner #origin-left label .required, #ttc-trip-planner #destination-left label .required { float:none; display:inline; margin-left:2px; _margin-left:0px; padding:0 0 0 5px; _padding:0px; background:url("/images/fixedImages/asterisk.gif") no-repeat 0 0; }
+#ttc-trip-planner #origin-left span, #ttc-trip-planner #destination-left div { display:block; float:right; width:84%; margin:10px 0 0; }
+#ttc-trip-planner #origin-left h4 span { width:15%; float: left; margin:10px 0 0 0; }
+#ttc-trip-planner #origin-left input, #ttc-trip-planner #destination-left input { width:70%; float:left; }
+#ttc-trip-planner #destination-left { position:relative; }
+#ttc-trip-planner #destination-left h4 { float:left; }
+#ttc-trip-planner #destination-left h4, #ttc-trip-planner #destination-left div { margin-top:35px;}
+#ttc-trip-planner #destination-left div.dirSwap { position:absolute; top:0; left:0; _left:0px; margin:0; _position:relative; _margin-top:-55px; _float:none;}
+#tp-ln-input, #tp-mo-input { width:auto !important; }
+#tp-ln-input{ float:left; }
+#tp-mo-input { *margin-top:5px; float:left;}
+#tp-ln-input input { margin:0 10px 0 93px; _position:relative; _top:2px; _left:97px; }
+#trip-plan-cont #tp-ln-input input{}
+#tp-ln-input img { vertical-align:text-top; }
+#tp-ln-input label { }
+#tp-ln-input .help { margin-left:3px; *margin-top:5px;}
+#tp-ln-input .help img {*margin-top:3px;
+}
+.field-line{ width:500px; clear:both; margin-left:14px; *margin-left:9px; margin-left:9px\0/; padding-top:10px;}
+#ttc-trip-planner .btn { margin:20px 0 0 95px; }
+#ttc-trip-planner .more-options { background:none; border:none; color:#104ba5; text-decoration:underline; cursor:pointer; margin-top:0; padding:0 0 0 5px; *overflow:visible; *margin-top:2px;}
+
+#ttc_route_page_tabs .ui-tabs-nav li a:hover { text-decoration:underline; }
+#ttc_route_page_tabs h3 { padding:0.5em 1em 1px; font-weight:bold; } 
+
+#ttc_route_page_tabs .extTab h3{
+    padding:0px;}
+/*#ttc_route_page_tabs .ui-state-active h3{
+    padding:0px;}*/
+/*MERGE TO main.css*/
+.station #email-to-friend { margin-top:25px; clear:both; }
+=======
+/*
+ * jQuery UI Tabs @VERSION
+ *
+ * Copyright 2010, AUTHORS.txt (http://jqueryui.com/about)
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * http://jquery.org/license
+ *
+ * http://docs.jquery.com/UI/Tabs#theming
+ */
+.ui-tabs { position: relative; padding: .2em; zoom: 1; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+.ui-tabs .ui-tabs-nav { margin: 0; padding: .2em .2em 0; }
+.ui-tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 1px 0; /*border-bottom: 0 !important;*/ padding: 0; white-space: nowrap; }
+.ui-tabs .ui-tabs-nav li a { float: left; padding: .5em 1em; text-decoration: none; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; padding-bottom: 1px; }
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+.ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; padding:0.5em 1em 1px; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs .ui-tabs-panel { display: block; border-width: 0; /*padding: 1em 1.4em;*/ background: none; }
+.ui-tabs .ui-tabs-hide { display: none !important; }
+/*OVERRIDES */
+
+
+#ttc-dir-1 { position: relative; padding: .2em; zoom: 1; width:auto; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+#ttc-dir-1 .ui-tabs-nav { margin: 0; padding: 0;}
+#ttc-dir-1 .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 0px 0; border:1px solid #d2e1e8; padding: 0; white-space: nowrap; background:url("/images/fixedImages/tab-bg.jpg") repeat-x 0 bottom; }
+#ttc-dir-1 .ui-tabs-nav li a { float: left; padding: .5em 1em 1px; text-decoration: none; background:none; }
+#ttc-dir-1 .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; background:#fff url("/images/fixedImages/tab-bg-active.jpg") repeat-x 0 0; border-bottom:none; z-index:999; padding-bottom:1px; }
+#ttc-dir-1 .ui-tabs-nav li.ui-tabs-selected a { background:none; color:#000; font-weight:bold; }
+#ttc-dir-1 .ui-tabs-nav li.ui-tabs-selected a:hover{text-decoration:none;}
+#ttc-dir-1 .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+#ttc-dir-1 .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+#ttc-dir-1 .ui-tabs-panel { display: block; border-width: 0; padding: 20px 10px; background: none; border:1px solid #d2e1e8; position:relative; z-index:998; width:auto;}
+#ttc-dir-1 .ui-tabs-panel ul { margin:10px 25px; }
+#ttc-dir-1 .ui-tabs-hide { display: none !important; }
+#ttc-dir-1 #tabMap, #ttc-dir-1 #tabRoute { border:none; }
+#ttc_route_page_tabs { position: relative; padding:0 .2em 0 0; zoom: 1; z-index:99; margin-top:10px; } /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+#ttc_route_page_tabs .ui-tabs-nav { margin: 0; padding: 0; }
+#ttc_route_page_tabs .ui-tabs-nav li { list-style: none; float: left; position: relative; top: 1px; margin: 0 .2em 0px 0; border:1px solid #d2e1e8; padding:0px; white-space: nowrap; background:url("/images/fixedImages/tab-bg.jpg") repeat-x 0 bottom; }
+#ttc_route_page_tabs .ui-tabs-nav li a { float: left; padding: .5em 1em 1px; text-decoration: none; background:none; }
+#ttc_route_page_tabs .ui-tabs-nav li.ui-tabs-selected { margin-bottom: 0; background:#fff url("/images/fixedImages/tab-bg-active.jpg") repeat-x 0 0; border-bottom:none; padding-bottom:1px; *padding-bottom:2px; }
+#ttc_route_page_tabs .ui-tabs-nav li.ui-tabs-selected a { background:none; color:#000; font-weight:bold; }
+#ttc_route_page_tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a { cursor: text; }
+#ttc_route_page_tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { cursor: pointer; } /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+#ttc_route_page_tabs .ui-tabs-panel { display: block; border-width: 0; padding: 1em .75em; background: none; border:1px solid #d2e1e8; }
+#ttc_route_page_tabs .ui-tabs-panel ul { margin:10px 25px; }
+#ttc_route_page_tabs .ui-tabs-hide { display: none !important; }
+/*MERGE TO station.css*/
+.station h3 { margin:0px 0 0px 0; font-size:100%; /* font-weight:bold;*/
+/*  font-size:140%;*/
+/*  font-family:trebuchet ms, verdana, helvetica, sans-serif;*/
+ clear:both; line-height:1.1em; }
+ 
+.station-bottom-info h3 { margin:0px 0 0px 0; font-size:100%; font-weight:bold;
+ clear:both; line-height:1.1em; }
+ 
+.station a.ttc-back-to-top { float:right; padding-top:25px; }
+.station-bottom-info img { background:#fff; padding:3px; border: 1px solid #d2e1e8; float:left; margin: 0 10px 10px 0; }
+#ttc-trip-planner { _width:90%; position:relative; }
+#ttc-trip-planner #origin-left, #ttc-trip-planner #destination-left { border:none; float:left; padding-right:10px; width:100%; margin-bottom:0px; position:relative; }
+#ttc-trip-planner #destination-left { margin-bottom:20px; position:relative; }
+#ttc-trip-planner #origin-left h4, #ttc-trip-planner #destination-left h4 { width:15%; font-size:100%; font-family:trebuchet ms, verdana, helvetica, sans-serif; display:inline; }
+#ttc-trip-planner #origin-left label .required, #ttc-trip-planner #destination-left label .required { float:none; display:inline; margin-left:2px; _margin-left:0px; padding:0 0 0 5px; _padding:0px; background:url("/images/fixedImages/asterisk.gif") no-repeat 0 0; }
+#ttc-trip-planner #origin-left span, #ttc-trip-planner #destination-left div { display:block; float:right; width:84%; margin:10px 0 0; }
+#ttc-trip-planner #origin-left h4 span { width:15%; float: left; margin:10px 0 0 0; }
+#ttc-trip-planner #origin-left input, #ttc-trip-planner #destination-left input { width:70%; float:left; }
+#ttc-trip-planner #destination-left { position:relative; }
+#ttc-trip-planner #destination-left h4 { float:left; }
+#ttc-trip-planner #destination-left h4, #ttc-trip-planner #destination-left div { margin-top:35px;}
+#ttc-trip-planner #destination-left div.dirSwap { position:absolute; top:0; left:0; _left:0px; margin:0; _position:relative; _margin-top:-55px; _float:none;}
+#tp-ln-input, #tp-mo-input { width:auto !important; }
+#tp-ln-input{ float:left; }
+#tp-mo-input { *margin-top:5px; float:left;}
+#tp-ln-input input { margin:0 10px 0 93px; position:relative; bottom:-1px;  *left:97px; }
+#trip-plan-cont #tp-ln-input input{}
+#tp-ln-input img { vertical-align:text-top; }
+#tp-ln-input label { }
+#tp-ln-input .help { margin-left:3px; *margin-top:5px;}
+#tp-ln-input .help img {*margin-top:3px;
+}
+.field-line{ width:500px; clear:both; margin-left:12px; _margin-left:-4px; *margin-left:8px; margin-left:8px\0/;  padding-top:10px;}
+#ttc-trip-planner .btn { margin:20px 0 0 95px; }
+#ttc-trip-planner .more-options { background:none; border:none; color:#104ba5; text-decoration:underline; cursor:pointer; margin-top:0; padding:0 0 0 5px; *overflow:visible; *margin-top:2px;}
+
+#ttc_route_page_tabs .ui-tabs-nav li a:hover { text-decoration:underline; }
+#ttc_route_page_tabs h3 { padding:0.5em 1em 1px; font-weight:bold; } 
+
+#ttc_route_page_tabs .extTab h3{
+    padding:0px;}
+/*#ttc_route_page_tabs .ui-state-active h3{
+    padding:0px;}*/
+/*MERGE TO main.css*/
+.station #email-to-friend { margin-top:25px; clear:both; }
+
+.accessible-icon {
+    background: url("/trip_planner_static/images/ttc-icon-route-access.gif");
+   background-repeat: no-repeat;
+  display: inline;
+    padding-bottom: 4px;
+    padding-left: 16px;
+    margin-left:-3px;
+
+
+  
+}
+
+>>>>>>> .merge-right.r3880
+
+span.branch__ {
+    background: #b80000;
+    padding: 2px 0px 0px;
+    color: #b80000;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+    overflow: hidden;
+}
+
+span.branch_A {
+    background: #f6dc48;
+    padding: 2px 0px 0px;
+    color: #000;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_B {
+    background: #3a7c19;
+    padding: 2px 0px 0px;
+    color: #fff;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_C {
+    background: #663300;
+    padding: 2px 0px 0px;
+    color: #fff;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_D {
+    background: #8f074e;
+    padding: 2px 0px 0px;
+    color: #fff;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_E {
+    background: #000000;
+    padding: 2px 0px 0px;
+    color: #fff;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_F {
+    background: #003366;
+    padding: 2px 0px 0px;
+    color: #fff;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_G {
+    background: #b80000;
+    padding: 2px 0px 0px;
+    color: #fff;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_H {
+    background: #660000;
+    padding: 2px 0px 0px;
+    color: #fff;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_I {
+    background: #dcf3f3;
+    padding: 2px 0px 0px;
+    color: #000;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_J {
+    background: #ffd9d9;
+    padding: 2px 0px 0px;
+    color: #000;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_K {
+    background: #e7e7ce;
+    padding: 2px 0px 0px;
+    color: #000;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_L {
+    background: #ffd633;
+    padding: 2px 0px 0px;
+    color: #000;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_M {
+    background: #dce7c4;
+    padding: 2px 0px 0px;
+    color: #000;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_N {
+    background: #666666;
+    padding: 2px 0px 0px;
+    color: #fff;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_O {
+    background: #dcdcff;
+    padding: 2px 0px 0px;
+    color: #000;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_P {
+    background: #d4ffd4;
+    padding: 2px 0px 0px;
+    color: #000;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_Q {
+    background: #ffffcc;
+    padding: 2px 0px 0px;
+    color: #000;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_R {
+    background: #704343;
+    padding: 2px 0px 0px;
+    color: #fff;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_T {
+    background: #894701;
+    padding: 2px 0px 0px;
+    color: #fff;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_U {
+    background: #daf8c5;
+    padding: 2px 0px 0px;
+    color: #000;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_W {
+    background: #fd8301;
+    padding: 2px 0px 0px;
+    color: #000;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_X {
+    background: #044f49;
+    padding: 2px 0px 0px;
+    color: #fff;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_Y {
+    background: #e7e17a;
+    padding: 2px 0px 0px;
+    color: #000;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+span.branch_Z {
+    background: #006666;
+    padding: 2px 0px 0px;
+    color: #fff;
+    display: block;
+    width: 1.4em;
+    text-align: center;
+    margin: 3px 3px 3px 0;
+}
+
+#ttc-grid-content #ttc-local-nav ul#ttc-maps li a.title {
+    background: #0e0e0e url("/images/fixedImages/ttc-local-nav-maps.gif") no-repeat 6px 3px;
+    border-bottom: none;
+    _margin: 0;
+    display: block;
+    padding: 9px 0 9px 34px;
+    _margin-right: -65px;
+}
+
+#ttc-grid-content #ttc-local-nav ul#ttc-maps li span.title {
+    background: #0e0e0e url("/images/fixedImages/ttc-local-nav-maps.gif") no-repeat 6px 3px;
+    border-bottom: 1px solid #fff;
+    _margin: 0;
+    display: block;
+    padding: 9px 0 9px 34px;
+}
+
+#ttc-grid-content #ttc-local-nav ul#ttc-maps li ul.maps li a.title,
+#ttc-grid-content #ttc-local-nav ul.ttc-maps li ul#maps li span.title {
+    border-bottom: none;
+    _margin: 0;
+    padding: 0 0 0 20px;
+    _padding: 0 0 0 15px;
+    background: none;
+}
+
+#ttc-local-nav ul#ttc-maps {
+    margin: 1px 0 0 0;
+    padding: 0;
+    _padding: 0;
+    _margin: 1px 0 0 0;
+    border-bottom: 0;
+}
+
+#ttc-local-nav ul#ttc-maps li {
+    margin: 0;
+    padding: 0;
+    *padding: 0;
+    _padding: 0;
+}
+
+#ttc-local-nav ul#ttc-maps li a.title {
+    _display: inline-block;
+    _width: 150px;
+}
+
+#ttc-local-nav ul#ttc-maps li ul.maps {
+    margin: 1px 0 0 0;
+    padding: 0;
+    _padding: 0;
+    _margin: 1px 0 0px 0;
+    _margin-right: -65px;
+}
+
+#ttc-local-nav ul#ttc-maps li ul.maps li {
+    margin: 0;
+    padding: 3px 5px 3px 0px;
+    *padding: 3px 5px 3px 0px;
+    _padding: 3px 10px 3px 0px;
+    background: #fff;
+    border-top: 1px solid #E4E3E3;
+    _margin: 0px;
+}
+
+#ttc-local-nav ul#ttc-maps li ul.maps li.active {
+    margin: 0;
+    padding: 3px 5px 3px 20px;
+    *padding: 3px 5px 3px 20px;
+    _padding: 3px 10px 3px 15px;
+    color: #fff;
+    background: #535353;
+    border-top: 1px solid #E4E3E3;
+    font-size: 92%;
+}
+
+#ttc-local-nav ul#ttc-maps li ul.maps li a {
+    color: #000;
+    display: block;
+    background: #fff;
+    padding: 0 0 0 20px;
+    _padding: 0 10px 0 20px;
+    _margin: 0;
+}
+
+#ttc-local-nav ul#ttc-maps li ul.maps li a:hover {
+    text-decoration: underline;
+    _margin: 0;
+}
+
+#ttc-local-nav ul#ttc-maps li ul.maps li span.active {
+    color: #fff;
+    background-color: #535353;
+    padding: 0;
+    _margin: 0;
+}
+
+#ttc-grid-content #ttc-local-nav ul.ttc-maps li ul#maps li.active span.active {
+    border-bottom: none;
+    _margin: 0;
+    padding: 0 0 0 34px;
+    _padding: 0 0 0 10px;
+    background: none;
+}
+
+a#subway_rt_thumb {
+    display: block;
+    _width: 390px;
+    _height: 148px;
+    background: url('/images/Routes/General_Information/subway_rt_map.gif') top left no-repeat;
+    padding: 74px 0px;
+    _padding: 0px 0px;
+}
+
+.img-border {
+    border: 1px solid #d2e0e7;
+    background: #fff;
+    padding: 3px;
+    display: block;
+}
+
+.route-map-align {
+    float: left;
+    width: 72px;
+    margin-right: 10px;
+    padding: 3px;
+    border: 1px solid #d2e0e7;
+}
+
+.route-map-align a h4 {
+    text-decoration: none;
+}
+
+.route-map-align a h4:hover {
+    text-decoration: underline;
+}
+
+.route-text-align {
+    width: 320px;
+}
+
+col#csdn-service-alert {
+    width: 75% 
+}
+
+col#csdn-updated {}
+
+table.ttc-csdn-table {
+    margin: 8px 0 0 0;
+    width: 100%;
+    border: 1px solid #d5070d;
+    border-bottom: none;
+}
+
+table.ttc-csdn-table tr {
+    height: 1.8em;
+    margin: 0;
+    padding: 0;
+}
+
+table.ttc-csdn-table thead tr th {
+    padding: 6px 0px 5px 10px;
+    background: url("/images/fixedImages/ttc-service-alert-h-bg.gif") repeat-x 0 0;
+    font-weight: normal;
+    color: #FFF; /*font-size:92%;*/
+}
+
+table.ttc-csdn-table thead tr th.nextbus {
+    text-align: left;
+}
+
+table.ttc-csdn-table tr td h6 {
+    margin-bottom: 10px;
+}
+
+table.ttc-csdn-table tr td {
+    padding-left: 10px;
+    border-bottom: 1px solid #d5070d;
+}
+
+table.ttc-csdn-table tr td img {
+    border: none;
+}
+
+table.ttc-csdn-table tr td a {
+    text-decoration: none;
+}
+
+table.ttc-csdn-table tr td a:hover, table.ttc-csdn-table tr td a:focus {
+    text-decoration: underline;
+}
+
+table.ttc-csdn-table tr.blue td {
+    background-color: #f4f6f7;
+}
+
+table.ttc-csdn-table tr.hoverColor td {
+    background-color: #fdfed6;
+    cursor: pointer;
+}
+
+col#csdn-service-advisory {
+    width: 75% 
+}
+
+col#csdn-advisory-updated {}
+
+table.ttc-csdn-advisory-table {
+    margin: 8px 0 25px 0;
+    width: 100%;
+    border: 1px solid #d2e1e8;
+    border-bottom: none;
+}
+
+table.ttc-csdn-advisory-table tr {
+    height: 1.8em;
+    margin: 0;
+    padding: 0;
+}
+
+table.ttc-csdn-advisory-table thead tr th {
+    padding: 6px 0px 5px 10px;
+    background: #fd5b14 url("/images/fixedImages/orange_background_bar.gif") repeat-x 0 0;
+    font-weight: normal;
+    color: #fff;
+    font-size: 100%;
+}
+
+table.ttc-csdn-advisory-table thead tr th.nextbus {
+    text-align: left;
+}
+
+table.ttc-csdn-advisory-table tr td h6 {
+    margin-bottom: 10px;
+}
+
+table.ttc-csdn-advisory-table tr td {
+    padding-left: 10px;
+    border-bottom: 1px solid #d2e1e8;
+}
+
+table.ttc-csdn-advisory-table tr td img {
+    border: none;
+    vertical-align: text-bottom;
+    margin-right: 3px;
+}
+
+table.ttc-csdn-advisory-table tr td a {
+    text-decoration: none;
+}
+
+table.ttc-csdn-advisory-table tr td p {
+    color: #535353;
+}
+
+table.ttc-csdn-advisory-table tr td a:hover, table.ttc-csdn-table tr td a:focus {
+    text-decoration: underline;
+}
+
+table.ttc-csdn-advisory-table tr.blue td {
+    background-color: #f4f6f7;
+}
+
+table.ttc-csdn-advisory-table tr.hoverColor td {
+    background-color: #fdfed6;
+    cursor: pointer;
+}
+
+#ttc-station-feature.promo table.ttc-csdn-table tr td img {
+    border: none;
+}
+
+.advisory-wrap {
+    margin-bottom: 3px;
+    *margin-top: 15px;
+    position: relative;
+}
+
+.advisory-wrap div {
+    position: relative;
+}
+
+.advisory-header, #ttc-station-feat h3.advisory-header {
+    padding: 3px 0px 2px 10px;
+    background: #fd5b14 url("/images/fixedImages/orange_background_bar.gif") repeat-x 0 0;
+    font-weight: normal;
+    color: #fff;
+    font-size: 100%;
+    margin-top: 0px;
+    *margin-top: 15px;
+}
+
+.content .alert-header, .alert-header, #ttc-station-feat h3.alert-header {
+    padding: 3px 0px 2px 10px;
+    background: #fd5b14 url("/images/fixedImages/ttc-service-alert-h-bg.gif") repeat-x 0 0;
+    font-weight: normal;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.advisory-cont, .alert-content {
+    padding: 5px 10px;
+    border: 1px solid #d2e1e8;
+    border-top: none;
+}
+
+.advisory-cont h4, #ttc-station-feat .advisory-cont h4, .alert-content h4,
+#ttc-station-feat .alert-content h4 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.advisory-cont p, #ttc-main-content.route .advisory-cont p, .alert-content p {
+    color: #535353;
+    margin: 0;
+}
+
+.advisory-cont p, #ttc-main-content.route .advisory-cont p, .alert-content p {
+    color: #535353;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.advisory-cont p.veh-replace, #ttc-main-content.route .advisory-cont p.veh-replace,
+.alert-content p.veh-replace {
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+/*.ttc-schedule-module{margin-top:20px;}*/
+
+/*Refined Search styles*/
+
+#nav-search {
+    width: 139px;
+    background: url("/images/fixedImages/ttc-header-search-bg.gif") repeat-x 0 0;
+    margin-bottom: 5px;
+    padding: 0 3px;
+}
+
+#refine-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#refine-search-site {
+    margin: 5px 0 0 0;
+}
+
+#refine-search-meetings {
+    margin: 0;
+}
+
+/* CONTEXT HELP */
+
+#context-help {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    padding: 5px 10px;
+    background: #FFC;
+    border: 1px solid #CCC;
+    text-align: left;
+    margin-top: 12px;
+    *margin-top: 9px;
+    margin-left: 1px;
+    *margin-left: 0px;
+    _margin-left: 0px;
+    z-index: 1000;
+}
+
+#close-help {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 12px;
+    *margin-top: 9px;
+    z-index: 1001;
+    *margin-left: -3px;
+    /*_margin-left:-3px;*/
+}
+
+#close-help img {
+    margin: 0 3px;
+}
+
+#ttc-main-content.schedule h3 a.help {
+    outline: none;
+}
+
+a.help {
+    border: 1px solid #fff;
+    padding-top: 4px;
+    *padding-top: 0;
+    text-decoration: none;
+    position: relative;
+    _padding: 0;
+    _margin: 0;
+}
+
+.more-options a.help {
+    border: 1px solid #eef3f6;
+    text-decoration: none;
+}
+
+table.ttc-direction-table a.help {
+    border: 1px solid #dee6e8;
+    outline: none;
+    text-decoration: none;
+}
+
+a.help:focus, a#close-help:focus {
+    border: 1px solid #000;
+    text-decoration: none;
+}
+
+a.help:hover, a#close-help:hover {
+    text-decoration: none; /*position:relative;*/
+    /*_padding:0; _margin:0*/
+}
+
+a.help:active, a#close-help:active {
+    text-decoration: none;
+}
+
+/*for the accordian*/
+.selected_collision_en {
+    background-image: url("/images/fixedImages/arrow-open.gif") !important;
+    background-position: 3px 50%;
+    background-repeat: no-repeat;
+    height: 12px;
+}
+
+.advisory-header-accordion, #ttc-station-feat h3.advisory-header-accordion {
+    background: url("/images/fixedImages/orange_background_bar.gif") repeat-x scroll 0 0 #FD5B14;
+    background-position: 3px 50%;
+    background-repeat: no-repeat;
+    color: #FFFFFF; /* padding:5px 5px 12px 22px; */
+    padding: 5px 0px 6px 22px;
+    height: 12px;
+    cursor: pointer;
+}
+
+#mp-advisory-wrap h4 {
+    margin-top: 0px;
+    font-size: 100%;
+    font-family: inherit;
+    font-weight: normal;
+}
+
+#mp-advisory-wrap .advisory-header-accordion, #ttc-station-feat h3.advisory-header-accordion {
+    padding: 3px 0px 12px 10px;
+    _padding: 3px 0px 5px 10px;
+    font-weight: normal;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 0;
+    background: #fd5b14 url("/images/fixedImages/orange_background_bar.gif") repeat-x 0 0;
+}
+
+.advisory-header-accordion:hover, #ttc-station-feat h3.advisory-header-accordion:hover {
+    text-decoration: underline;
+}
+
+.advisory-header-accordion, #ttc-station-feat h3.advisory-header-accordion {
+    background-image: url("/images/fixedImages/arrow-close.gif");
+}
+
+.help-imageborder {
+    border: 1px solid #333;
+    padding: 3px;
+    margin: 5px;
+}
+
+/*------------1024 MAIN CSS--------------*/
+
+#ttc-main-container {
+    width: 956px;
+}
+
+#ttc-main-header {
+    width: 956px;
+}
+
+#ttc-main-header ul#ttc-main-nav {
+    width: 955px;
+}
+
+#ttc-main-header ul#ttc-main-nav li a {
+    width: 238px;
+}
+
+#ttc-main-header ul#ttc-main-nav li a.first {
+    width: 238px;
+}
+
+#ttc-grid-content {
+    width: 956px;
+    *width: 960px;
+}
+
+#ttc-grid-content #ttc-local-nav {
+    margin-left: -955px;
+}
+
+#ttc-grid-content #ttc-main-content {
+    width: 617px;
+}
+
+#ttc-grid-content #ttc-main-content.results {
+    *width: 598;
+}
+
+#ttc-footer .ttc-footer-content {
+    width: 956px;
+}
+
+#ttc-main-container #ttc-main-search {
+    margin-left: 590px;
+    _margin-left: 585px;
+}
+
+#ttc-main-container #ttc-main-search input.text {
+    width: 51%;
+    *width: 45%;
+}
+
+.route-text-align {
+    width: 525px;
+    _width: 520px;
+    float: left;
+}
+
+.content .main-content {
+    _width: 599px;
+}
+
+.content .col.first {
+    width: 296px;
+    _width: 260px;
+}
+
+.content .col {
+    width: 308px;
+    _width: 260px;
+}
+
+.content .col-list {
+    width: 189px;
+    _width: 165px;
+}
+
+.content .col-list.last {
+    width: 189px;
+    _width: 165px;
+}
+
+.content .col-list ul {
+    width: 189px;
+    _width: 160px;
+}
+
+.content .col-list ul.parking, .content .col-list.last ul.parking {
+    width: 189px;
+    _width: 160px;
+}
+
+/*------------New Buttons for the csdn phrase 2 project--------------*/
+.addTrip-btn {
+    padding: 2px;
+    width: 165px;
+}
+
+.removeTrip-btn {
+    padding: 2px;
+    width: 215px;
+}
+
+.updateTrip-btn {
+    padding: 2px;
+    width: 210px;
+}
+
+.trip-btn-container {
+    float: right;
+    display: inline;
+    width: 220px;
+    zoom: 1;
+}
+
+.btnRed {
+    background: url("/images/fixedImages/ttc-btn-grad.gif") repeat-x scroll left bottom #D5070D;
+    border: 1px solid #000000;
+    color: #FFFFFF;
+    font-family: verdana, helvetica, sans-serif;
+    font-size: 102%;
+    font-weight: normal;
+    margin: 5px 0 0 5px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.btnGrey {
+    background-color: #666;
+    border: 1px solid #000000;
+    color: #FFFFFF;
+    font-family: verdana, helvetica, sans-serif;
+    font-size: 102%;
+    font-weight: normal;
+    margin: 5px 0 0 5px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.btnWhite {
+    background-color: #FFFFFF;
+    border: 1px solid #666;
+    color: #000000;
+    font-family: verdana, helvetica, sans-serif;
+    font-size: 102%;
+    font-weight: normal;
+    margin: 5px 0 0 5px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+dl#ttc-fares {
+    margin: 0 5px 10px; /*font-size:92%;*/
+}
+
+dl#ttc-fares dt {
+    margin: 0;
+    font-weight: bold;
+}
+
+dl#ttc-fares dd {
+    margin-bottom: 10px;
+}
+
+/*a.help{
+    _margin:0;
+    _padding:0;
+    border:1px solid #FFFFFF;
+    display:inline-block;
+    height:20px;
+    position:relative;
+    text-align:center;
+    text-decoration:none;
+    width:20px;
+    *zoom:1;
+    *display:inline;
+    
+    }
+*/
+
+/*styles for new tab on http://tripplanner.sit.devlin.ca/Routes/6/Northbound.jsp*/
+
+#ttc_route_page_tabs h3 {
+    padding: 3px 3px 4px 3px;
+    font-weight: bold;
+}
+
+/*test*/
+
+#StationDescription .schedule-info h4 {
+    font-weight: bold;
+}
+
+#StationDescription .schedule-info h5 {
+    margin-top: 6px;
+}
+
+#C_enumeration {
+    counter-reset: item;
+    list-style-type: none;
+    padding: 0 0 20px 0;
+}
+
+#C_enumeration li:before {
+    content: 'C' counter(item, decimal) '. ';
+    counter-increment: item;
+}
+
+.tabhighlight {
+    display: inline;
+}

@@ -1,0 +1,199 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>94 Seaton Dr, Aurora, ON - YU: Student Portal</title>
+
+		<link rel="stylesheet" type="text/css" href="style/main.css">
+		<link rel="stylesheet" type="text/css" href="style/tonny.css">
+
+		<link rel="stylesheet" type="text/css" href="style/nav.css">
+		<script src="backbone/lockedBar.js"></script>
+		<link rel="stylesheet" type="text/css" href="style/search-bar.css">
+		<script src="backbone/lockedBar.js"></script>
+		<script src="backbone/searchalg.js"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+  <script>
+        function printValue(sliderID, textbox) {
+            var x = document.getElementById(textbox);
+            var y = document.getElementById(sliderID);
+            x.value = y.value;
+        }
+
+        window.onload = function() { printValue('slider1', 'rangeValue1'); printValue('slider2', 'rangeValue2'); printValue('slider3', 'rangeValue3'); printValue('slider4', 'rangeValue4'); }
+    </script>
+
+	</head>
+	<body onload="javascript:window_onload();">
+		<header>
+			<!-- 
+			Place header items here. 
+				- York Logo, student portal, login etc/.
+
+			`-->
+			<img id="logo" src="img/rsz_yorku_logo-trans.png">
+			<div class="login">
+				Welcome back, <a href="">Tonny Lay</a>
+			</div>
+			<br>
+			<h1 id="sp">Student Portal</h1>
+			
+		</header>
+
+						<!-- Place navigation items here. -->
+		<nav id="navbar" class="navbar_absolute">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="news.html">News</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="deptnews.html">Department News</a></li>
+							<li><a href="deptann.html">Announcements</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="transit.html">Transit</a></li>
+				<li><a href="calendar.html">Calendar</a></li>
+				<li><a href="housing.html">Housing</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="oncampus.html">On-Campus</a></li>
+							<li><a href="offcampus.html">Off-Campus</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<form NAME="searchfield" ACTION="" METHOD="GET">
+						<div id="searchbar">
+
+							<input type="text" id="search" placeholder="Search" name="search" width="10" onkeypress="searchKeyPress(event)"
+							>
+							<a href="" onclick="openSearchPage()"><img src="img/search-black.png" id="magnify"></a>
+						</div>
+					</form>
+				</li>			
+			</ul>
+
+		</nav>
+<div style="clear:both"> 
+		<section>
+			<article class="full">
+				
+							<!-- Grab the user's first name and post it in the span below. -->
+					<h1 id="title">
+						Off-Campus Housing</h1>
+
+					<span id="breadcrumb">
+					<a href="home.html">Home</a> > 
+					<a href="housing.html">Housing</a> > Off-Campus
+					</span>
+			</article>
+
+			
+			<article class="full">
+
+				<span id="breadcrumb" style="font-size:120%;">
+					<a href="offcampus.html">Back to Search Results</a> > 94 Seaton Dr, Aurora, ON
+					</span>
+		</article>
+	
+
+			<article class="full" style="height:400px; width:60%;">
+				<img src="img/house1.png">
+				<p style="position: relative; right:205px; top:275px;">
+				<img src="img/house2.png">
+				<a href=""><img src="img/house3.png"></a>
+				<a href=""><img src="img/house4.png"></a>
+				</p>
+				<table style="position: relative; right:180px; top:10px;">
+				<tr>
+					<td width="110px" style="font-size:100%; color:#CD190A;">Price</td>
+					<td>$900.00</td>
+				</tr>
+				<tr>
+					<td style="font-size:100%; color:#CD190A;">Date Posted</td>
+					<td width="110px">Jun 23 2014</td>
+				</tr>
+				<table>
+				<table style="font-size:100%; position: relative; top: 30px; right: 50px;">
+					<tr>
+						<td>1 Bedroom</td>
+						<td><img style="position:relative; bottom:5px;" src="img/checkmark.png"><span style="position:relative; left:5px;">House</span></td>
+						<td><img style="position:relative; bottom:5px;" src="img/checkmark.png"><span style="position:relative; left:5px;">Parking</span></td>
+					</tr>
+					<tr>
+						<td>1 Bathroom</td>
+						<td><img style="position:relative; bottom:5px;" src="img/checkmark.png"><span style="position:relative; left:5px;">Cats</span></td>
+						<td><img style="position:relative; bottom:5px;" src="img/checkmark.png"><span style="position:relative; left:5px;">Laundry</span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><img style="position:relative; bottom:5px;" src="img/checkmark.png"><span style="position:relative; left:5px;">Furnished</span></td>
+						<td><img style="position:relative; bottom:5px;" src="img/checkmark.png"><span style="position:relative; left:5px;">Dishwasher</span></td>
+					</tr>
+				</table>
+				<div style="color: #000000; position: relative; top: 40px; left:25px; width:500px">Cozy, one bedroom basement apartment with a separate entrance is available now. The unit has a kitchen, 3 pieces bathroom, washer, dryer. It is located in a quiet residential area across the park, close to TTC. Former landlord referral, proof of income and credit status are required. Price: $900.00 plus a portion of utilities. 1st and last month rent.</div>
+				
+				<article class="full" style="position:relative; top:-235px; left: 635px; width:55%; height:400px;">
+					<p class="sectionheader" style="position:relative; right:200px;">Contact</p>
+					<table width="200px" style="position:relative; right:0px;">
+						<tr>
+							<td>
+								<img style="position:relative; bottom:8px;" src="img/phone.png"><span style="position:relative; left:20px;">647 654 8669</span>
+							</td>
+							
+						</tr>
+						<tr>
+							<td>
+								<img style="position:relative; bottom:5px;" src="img/mail.png"><span style="position:relative; left:20px;">Email Poster</span>
+							</td>
+							
+						</tr>
+					</table>
+					<br>
+					<form id="R2SForm" action="/j-contact-seller.json" method="post" enctype="application/x-www-form-urlencoded" style="position:relative; left:46px;">
+					<input id="viewad-contact-from" name="from" title="Your Email" data-placeholder="Your Email" data-type="email" req="req" type="text" maxlength="128" value="laytonny@yorku.ca" />
+           
+            		<br>
+            
+                <input title="Your Name" type="text" req name="fromName"
+                       maxlength="100" id="viewad-contact-from-name" value="Tonny Lay" />
+           			<br>
+                    <input title="Phone Number (optional)" type="text" name="phoneNumber" maxlength="40"
+                           id="viewad-contact-phone-number" data-placeholder="Phone Number (optional)" value="647-539-8669" />
+                  
+                <textarea title="Message" req name="message" maxlength="1024"
+                          data-placeholder="Message" id="viewad-contact-message" style="height:170px; width:250px;"></textarea>
+           
+            </form>
+            <input type="submit" value="Send Email" style="position:relative; left:43px;">
+				</article>
+			
+
+			
+
+		</section>
+		</div>
+			<div style="clear:both"> 
+		<footer>
+			<center id="inline">
+				<span id="copyright">
+					Copyright © 2014 York University
+				</span>
+				<A HREF="" id="pandl">Privacy & Legal</A>
+				<a href="" id="contact">Contact Us</a>
+				Follow us:
+				<span id="social">
+					<a href=""><img src="img/facebook.png"></a>
+					<a href=""><img src="img/twitter.png"></a>
+					<a href=""><img src="img/linkedin.png"></a>
+					<a href=""><img src="img/youtube.png"></a>
+				</span>
+			</center>
+			<div id="address">
+				4700 Keele Street, Toronto, ON, M3J 1P3, Canada
+			</div>
+		</footer>
+		</div>
+	</body>
+<html/>

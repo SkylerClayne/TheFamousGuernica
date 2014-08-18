@@ -1,0 +1,211 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Fares - YU: Student Portal</title>
+
+		<link rel="stylesheet" type="text/css" href="style/main.css">
+		<link rel="stylesheet" type="text/css" href="style/tonny.css">
+
+		<link rel="stylesheet" type="text/css" href="style/nav.css">
+		<script src="backbone/lockedBar.js"></script>
+		<link rel="stylesheet" type="text/css" href="style/search-bar.css">
+		<script src="backbone/lockedBar.js"></script>
+		<script src="backbone/searchalg.js"></script>
+
+
+	</head>
+	<body onload="javascript:window_onload();">
+		<header>
+			<!-- 
+			Place header items here. 
+				- York Logo, student portal, login etc/.
+
+			`-->
+			<img id="logo" src="img/rsz_yorku_logo-trans.png">
+			<div class="login">
+				Welcome back, <a href="">Tonny Lay</a>
+			</div>
+			<br>
+			<h1 id="sp">Student Portal</h1>
+			
+		</header>
+
+						<!-- Place navigation items here. -->
+		<nav id="navbar" class="navbar_absolute">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="news.html">News</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="deptnews.html">Department News</a></li>
+							<li><a href="deptann.html">Announcements</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="transit.html">Transit</a></li>
+				<li><a href="calendar.html">Calendar</a></li>
+				<li><a href="housing.html">Housing</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="oncampus.html">On-Campus</a></li>
+							<li><a href="offcampus.html">Off-Campus</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<form NAME="searchfield" ACTION="" METHOD="GET">
+						<div id="searchbar">
+
+							<input type="text" id="search" placeholder="Search" name="search" width="10" onkeypress="searchKeyPress(event)"
+							>
+							<a href="" onclick="openSearchPage()"><img src="img/search-black.png" id="magnify"></a>
+						</div>
+					</form>
+				</li>			
+			</ul>
+
+		</nav>
+<div style="clear:both"> 
+		<section>
+			<article class="full">
+				
+							<!-- Grab the user's first name and post it in the span below. -->
+					<h1 id="title">
+						Transportation Information</h1>
+
+					<span id="breadcrumb">
+					<a href="home.html">Home</a> > 
+					<a href="transit.html">Transit</a> > Fares
+					</span>
+			</article>
+
+			
+			<nav id="subnav">
+			<ul>
+				<li><a href="schedules.html" class="subnavlink">Schedules</a></li>
+				<li><a href="fares.html" class="subnavlink">Fares</a></li>
+				<li><a href="service.html" class="subnavlink">Service Alerts</a></li>
+							
+			</ul>
+
+		</nav>
+		Route Search:
+		<div id="rsearch">
+		<form NAME="searchfield" ACTION="" METHOD="GET">
+						<div id="searchbar">
+							<input type="text" id="search" placeholder="ex. 196" name="search" width="10" onkeypress="searchKeyPress(event)"
+							>
+							<a href="" onclick="openSearchPage()"><img src="img/search-black.png" id="magnify"></a>
+						</div>
+					</form>
+					</div>
+		
+		
+	
+					
+		
+			<article class="firsthalf">
+
+				<p class="sectionheader">Fare Details</p>
+				<br>
+				<br>
+				<table class="fare">
+					<tr>
+						<td>Cash</td>
+						<td>$ 3.00</td>
+					</tr>
+					<tr>
+						<td>Tokens</td>
+						<td>$ 2.70</td>
+					</tr>
+					<tr>
+						<td>Daily Pass</td>
+						<td>$ 11.00</td>
+					</tr>
+					<tr>
+						<td>Weekly Pass</td>
+						<td>$ 31.25</td>
+					</tr>
+					<tr>
+						<td>Monthly Pass</td>
+						<td>$ 108.00</td>
+					</tr>
+				</table>
+				
+				
+			</article>
+
+			<article class="fsecondhalf">
+				<p class="sectionheader">Sales Locations</p>
+				<br>
+				<br>
+				<span class="inkblotz">INKBLOTZ</span>
+				<span class="inkblotz2">Currently Open</span>
+				<br>
+				<div class="alert">
+				<img src="img/inkblotz.png">
+				</div>
+				<span class="inkblotz3">York Lanes, York University, Toronto, ON M3J 2S5</span>
+				
+				<table class="fare2">
+					<tr>
+						<td class="grey">Monday</td>
+						<td class="grey">9:00am-7:00pm</td>
+					</tr>
+					<tr>
+						<td>Tuesday</td>
+						<td>9:00am-7:00pm</td>
+					</tr>
+					<tr>
+						<td class="grey">Wednesday</td>
+						<td class="grey">9:00am-7:00pm</td>
+					</tr>
+					<tr>
+						<td>Thursday</td>
+						<td>9:00am-7:00pm</td>
+					</tr>
+					<tr>
+						<td class="grey">Friday</td>
+						<td class="grey">9:00am-5:00pm</td>
+					</tr>
+					<tr>
+						<td>Saturday</td>
+						<td>Closed</td>
+					</tr>
+					<tr>
+						<td class="grey">Sunday</td>
+						<td class="grey">Closed</td>
+					</tr>
+				</table>
+			</article>
+
+			
+
+			
+
+		</section>
+		</div>
+			<div style="clear:both"> 
+		<footer id="customfooter">
+			<center id="inline">
+				<span id="copyright">
+					Copyright © 2014 York University
+				</span>
+				<A HREF="" id="pandl">Privacy & Legal</A>
+				<a href="" id="contact">Contact Us</a>
+				Follow us:
+				<span id="social">
+					<a href=""><img src="img/facebook.png"></a>
+					<a href=""><img src="img/twitter.png"></a>
+					<a href=""><img src="img/linkedin.png"></a>
+					<a href=""><img src="img/youtube.png"></a>
+				</span>
+			</center>
+			<div id="address">
+				4700 Keele Street, Toronto, ON, M3J 1P3, Canada
+			</div>
+		</footer>
+		</div>
+	</body>
+<html/>

@@ -1,0 +1,278 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Off-Campus Housing - YU: Student Portal</title>
+
+		<link rel="stylesheet" type="text/css" href="style/main.css">
+		<link rel="stylesheet" type="text/css" href="style/tonny.css">
+
+		<link rel="stylesheet" type="text/css" href="style/nav.css">
+		<script src="backbone/lockedBar.js"></script>
+		<link rel="stylesheet" type="text/css" href="style/search-bar.css">
+		<script src="backbone/lockedBar.js"></script>
+		<script src="backbone/searchalg.js"></script>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+  <script>
+        function printValue(sliderID, textbox) {
+            var x = document.getElementById(textbox);
+            var y = document.getElementById(sliderID);
+            x.value = y.value;
+        }
+
+        window.onload = function() { printValue('slider1', 'rangeValue1'); printValue('slider2', 'rangeValue2'); printValue('slider3', 'rangeValue3'); printValue('slider4', 'rangeValue4'); }
+    </script>
+
+	</head>
+	<body onload="javascript:window_onload();">
+		<header>
+			<!-- 
+			Place header items here. 
+				- York Logo, student portal, login etc/.
+
+			`-->
+			<img id="logo" src="img/rsz_yorku_logo-trans.png">
+			<div class="login">
+				Welcome back, <a href="">Tonny Lay</a>
+			</div>
+			<br>
+			<h1 id="sp">Student Portal</h1>
+			
+		</header>
+
+						<!-- Place navigation items here. -->
+		<nav id="navbar" class="navbar_absolute">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="news.html">News</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="deptnews.html">Department News</a></li>
+							<li><a href="deptann.html">Announcements</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="events.html">Events</a></li>
+				<li><a href="transit.html">Transit</a></li>
+				<li><a href="calendar.html">Calendar</a></li>
+				<li><a href="housing.html">Housing</a>
+					<div id="submenu" class="submenu_absolute">
+						<ul>
+							<li><a href="oncampus.html">On-Campus</a></li>
+							<li><a href="offcampus.html">Off-Campus</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<form NAME="searchfield" ACTION="" METHOD="GET">
+						<div id="searchbar">
+
+							<input type="text" id="search" placeholder="Search" name="search" width="10" onkeypress="searchKeyPress(event)"
+							>
+							<a href="" onclick="openSearchPage()"><img src="img/search-black.png" id="magnify"></a>
+						</div>
+					</form>
+				</li>			
+			</ul>
+
+		</nav>
+<div style="clear:both"> 
+		<section>
+			<article class="full">
+				
+							<!-- Grab the user's first name and post it in the span below. -->
+					<h1 id="title">
+						Off-Campus Housing</h1>
+
+					<span id="breadcrumb">
+					<a href="home.html">Home</a> > 
+					<a href="housing.html">Housing</a> > Off-Campus
+					</span>
+			</article>
+
+			
+			<article class="full2">
+
+				<span>
+				<h1>Filter Off-Campus Housing</h1> <!-- float left -->
+				</span>
+			<span id="filtertitle">
+			</span>
+
+		<div id="prox">
+		Address Proximity:
+		<div id="rsearch">
+		<form NAME="searchfield" ACTION="" METHOD="GET">
+						<div id="searchbar">
+							<input type="text" id="search" placeholder="ex. York University" name="search" width="10" onkeypress="searchKeyPress(event)"
+							>
+							<a href="" onclick="openSearchPage()"><img src="img/search-black.png" id="magnify"></a>
+						</div>
+					</form>
+					</div>
+		</div>
+		</article>
+	
+					
+		
+			<article class="full" style="height: 120px;">
+
+				<table>
+			<tr>
+				<td style="width:90px;">
+					<div style="color:#C52100;" >Rent Range: </div>
+					<span class = "outer_slider_setting_text">$<span id="rent_slider_min_text">0</span> - <span id="rent_slider_max_text">3000</span></span>
+				</td>
+				<td>
+					<input id="slider1" type="range" min="0" max="3000" step="10" value ="1000" onchange="printValue('slider1','rangeValue1')"/>
+<input id="rangeValue1" type="text" size="5"/>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<div style="color:#C52100;">Bedrooms: </div>
+					<span class = "outer_slider_setting_text"><span id="br_slider_min_text">0</span> - <span id="br_slider_max_text">10</span> Beds</span>
+				</td>
+				<td>
+					<input id="slider2" type="range" min="0" max="10" step="1" value ="3" onchange="printValue('slider2','rangeValue2')"/>
+<input id="rangeValue2" type="text" size="5"/>
+				</td>
+			</tr>
+			<tr>
+				<td><div style="color:#C52100;">Bathrooms: </div>
+					<span class = "outer_slider_setting_text"><span id="ba_slider_text">1</span>+ Baths</span>
+				</td>
+				<td>
+					<input id="slider3" type="range" min="1" max="3000" step="10" value ="1000" onchange="printValue('slider1','rangeValue1')"/>
+<input id="rangeValue1" type="text" size="5"/>
+				</td>
+			</tr>
+		</table>
+
+		<table style="position: relative; bottom: 113px; left: 295px;">
+			<tr>
+			<td style="color:#C52100;">Property Type:
+			</td></tr>
+			<tr>
+				<td><input type="checkbox">House</td>
+				<td><input type="checkbox">Apartment</td>
+			</tr>
+			<td style="color:#C52100;">Pets:
+			</td></tr>
+			<tr>
+				<td><input type="checkbox">Dogs</td>
+				<td><input type="checkbox">Cats</td>
+			</tr>
+		</table>
+
+		<table style="position: relative; bottom: 207px; left: 550px;">
+			<tr>
+			<td style="color:#C52100;">Amenities:
+			</td></tr>
+			<tr>
+				<td><input type="checkbox">Free Hydro</td>
+				<td><input type="checkbox">Free Heating</td>
+				<td><input type="checkbox">Free Water</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox">Furnished</td>
+				<td><input type="checkbox">Free Internet</td>
+				<td><input type="checkbox">Parking</td>
+			</tr>
+			<tr>
+				<td><input type="checkbox">Laundry</td>
+				<td><input type="checkbox">Balcony</td>
+				<td><input type="checkbox">Dishwasher</td>
+			</tr>
+		</table>
+				
+
+			</article>
+
+			<article class="full">
+				<span style="font-size:180%;">2 Matches</span>
+				<span style="font-size:180%; position:relative; left:630px;">Price</span>
+				<span style="font-size:180%; position: relative; left:710px">Date Posted</span>
+				<br>
+				<br>
+				<img src="img/aurora.png">
+				<a style="position:relative; left:20px;" href="housematch.html">94 Seaton Dr, Aurora, ON</a>
+				<div style="position:relative; left:20px; color:#000000;"><p>
+				Lower Level Bachelor (Studio) Apartment for Rent<br>in High Demand Aurora Highlands Location. . .
+				</p></div>
+				<table style="font-size:100%; position: relative; bottom: 71px; left: 300px;">
+					<tr>
+						<td>1 Bedroom</td>
+						<td><img style="position:relative; bottom:5px;" src="img/checkmark.png"><span style="position:relative; left:5px;">House</span></td>
+						<td><img style="position:relative; bottom:5px;" src="img/checkmark.png"><span style="position:relative; left:5px;">Parking</span></td>
+					</tr>
+					<tr>
+						<td>1 Bathroom</td>
+						<td><img style="position:relative; bottom:5px;" src="img/checkmark.png"><span style="position:relative; left:5px;">Cats</span></td>
+						<td><img style="position:relative; bottom:5px;" src="img/checkmark.png"><span style="position:relative; left:5px;">Laundry</span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><img style="position:relative; bottom:5px;" src="img/checkmark.png"><span style="position:relative; left:5px;">Furnished</span></td>
+						<td><img style="position:relative; bottom:5px;" src="img/checkmark.png"><span style="position:relative; left:5px;">Dishwasher</span></td>
+					</tr>
+				</table>
+				<span style="position:relative; bottom: 135px; left: 730px; color:#000000">$ 900.00</span>
+				<span style="position:relative; bottom: 135px; left: 805px; color:#000000">Jun 23 2014</span>
+				<hr>
+
+				<img src="img/aurora.png">
+				<a style="position:relative; left:20px;" href="housematch.html">94 Seaton Dr, Aurora, ON</a>
+				<div style="position:relative; left:20px; color:#000000;"><p>
+				Lower Level Bachelor (Studio) Apartment for Rent<br>in High Demand Aurora Highlands Location. . .
+				</p></div>
+				<table style="font-size:100%; position: relative; bottom: 71px; left: 300px;">
+					<tr>
+						<td>1 Bedroom</td>
+						<td><img style="position:relative; bottom:5px;" src="img/checkmark.png"><span style="position:relative; left:5px;">House</span></td>
+						<td><img style="position:relative; bottom:5px;" src="img/checkmark.png"><span style="position:relative; left:5px;">Parking</span></td>
+					</tr>
+					<tr>
+						<td>1 Bathroom</td>
+						<td><img style="position:relative; bottom:5px;" src="img/checkmark.png"><span style="position:relative; left:5px;">Cats</span></td>
+						<td><img style="position:relative; bottom:5px;" src="img/checkmark.png"><span style="position:relative; left:5px;">Laundry</span></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><img style="position:relative; bottom:5px;" src="img/checkmark.png"><span style="position:relative; left:5px;">Furnished</span></td>
+						<td><img style="position:relative; bottom:5px;" src="img/checkmark.png"><span style="position:relative; left:5px;">Dishwasher</span></td>
+					</tr>
+				</table>
+				<span style="position:relative; bottom: 135px; left: 730px; color:#000000">$ 900.00</span>
+				<span style="position:relative; bottom: 135px; left: 805px; color:#000000">Jun 23 2014</span>
+			</article>
+
+			
+
+			
+
+		</section>
+		</div>
+			<div style="clear:both"> 
+		<footer id="customfooter">
+			<center id="inline">
+				<span id="copyright">
+					Copyright © 2014 York University
+				</span>
+				<A HREF="" id="pandl">Privacy & Legal</A>
+				<a href="" id="contact">Contact Us</a>
+				Follow us:
+				<span id="social">
+					<a href=""><img src="img/facebook.png"></a>
+					<a href=""><img src="img/twitter.png"></a>
+					<a href=""><img src="img/linkedin.png"></a>
+					<a href=""><img src="img/youtube.png"></a>
+				</span>
+			</center>
+			<div id="address">
+				4700 Keele Street, Toronto, ON, M3J 1P3, Canada
+			</div>
+		</footer>
+		</div>
+	</body>
+<html/>

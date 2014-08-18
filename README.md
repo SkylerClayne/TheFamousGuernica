@@ -7,6 +7,14 @@ This project was developed in the Google Chrome web browser, in 1024x768 resolut
 
 --------------------------------------
 
+######Distriburtion of work:
+Home: Both Registered(home.html) and Unregistered(homereg.html)  - Skyler
+News: All News and Announcements - Skyler
+Events: All Events - Dyala
+Transit: All Transit - Tonny
+Calendar: All Calendar - Dyala
+Housing: Housing landing - Skyler, On Campus - Skyler, Off Campus - Tonny
+
 ######Main CSS Rules
 
 h1#title: title of current page.
